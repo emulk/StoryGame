@@ -6,6 +6,7 @@ package it.example.storygame;
 import android.os.Bundle;
 import android.app.Activity;
 import android.content.Intent;
+import android.text.method.ScrollingMovementMethod;
 import android.view.Menu;
 import android.view.View;
 
@@ -29,6 +30,12 @@ public class story1 extends Activity {
 		
 		//inizio
 		textview = (TextView) findViewById(R.id.story1);
+		//textview.setVerticalScrollBarEnabled(true);
+		//textview.setScroller(new Scroller(myContext)); 
+		//textview.setMaxLines(100); 
+		//textview.setVerticalScrollBarEnabled(true); 
+		//textview.setMovementMethod(new ScrollingMovementMethod()); 
+		textview.setMovementMethod(new ScrollingMovementMethod());
 		textview.setText("Questo è un giorno come tutti gli altri nelle Terre Tormentate. Sono passati 4 mesi ormai da quando \"I Signori delle Tenebre\" hanno dichiarato"
 		+"guerra al mio paese, le prime luci del'alba iniziano a intravedersi all'orizonte e tra poco la grande campana d'oro inizierà a emettere un "
 		+"suono assordante come fa ogni mattina e indicherà ad ogni guerriero di questo paese che sara' tempo di addestramento."

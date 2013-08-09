@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.app.Activity;
 import android.content.Intent;
 
+import android.text.method.ScrollingMovementMethod;
 import android.view.Menu;
 import android.view.View;
 
@@ -32,6 +33,7 @@ public class partenzza extends Activity {
 		
 		//inizio
 		textview = (TextView) findViewById(R.id.story1);
+		textview.setMovementMethod(new ScrollingMovementMethod());
 		textview.setText("Apro la borsa e dentro ci inserisco 10 corone d'oro, affero una razione alimentare dallo scafale in alto e lo apoggio" +
 				" con cura dentro la borsa poi afferro la mia spada e indosso il corpetto di pelle. Finalmente sono pronto, scendo nella " +
 				"stalla e inizia a sentirsi il rumore assordante della campana d'oro. Salgo al cavallo e parto per il campo d'adestramento." +
