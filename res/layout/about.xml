@@ -1,0 +1,52 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    
+    android:gravity="center"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="43dp"
+        
+        android:padding="20dp"
+      	android:textColor="@color/Yellow" 
+        android:background="@color/DarkGreen"
+        android:text="@string/Info"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/sito"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="122dp"
+       	android:background="@color/Aqua"
+        android:textColor="@color/DarkBlue"
+        android:text="@string/sito" />
+
+    <Button
+        android:id="@+id/indietro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/sito"
+        android:layout_alignRight="@+id/sito"
+        android:layout_below="@+id/sito"
+        android:text="@string/indietro" 
+        
+         android:background="@color/Aqua"
+        android:textColor="@color/DarkBlue"
+         />
+
+</RelativeLayout>
