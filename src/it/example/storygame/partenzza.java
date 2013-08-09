@@ -7,6 +7,7 @@ package it.example.storygame;
 
 import android.os.Bundle;
 import android.app.Activity;
+import android.content.Intent;
 
 import android.view.Menu;
 import android.view.View;
@@ -96,7 +97,8 @@ public class partenzza extends Activity {
 										@Override
 										public void onClick(View v) {
 											// TODO Auto-generated method stub
-											finish();
+											Intent finish = new Intent(partenzza.this, Read.class);
+											startActivity(finish);
 											
 										}
 									});
@@ -225,7 +227,8 @@ public class partenzza extends Activity {
 																	@Override
 																	public void onClick(View v) {
 																		// TODO Auto-generated method stub
-																		finish();
+																		Intent finish = new Intent(partenzza.this, Read.class);
+																		startActivity(finish);
 																		
 																	}
 																});
@@ -263,7 +266,8 @@ public class partenzza extends Activity {
 																			@Override
 																			public void onClick(View v) {
 																				// TODO Auto-generated method stub
-																				finish();
+																				Intent finish = new Intent(partenzza.this, Read.class);
+																				startActivity(finish);
 																				
 																			}
 																		});
@@ -292,7 +296,8 @@ public class partenzza extends Activity {
 																			@Override
 																			public void onClick(View v) {
 																				// TODO Auto-generated method stub
-																				finish();
+																				Intent finish = new Intent(partenzza.this, Read.class);
+																				startActivity(finish);
 																				
 																			}
 																		});
@@ -349,7 +354,8 @@ public class partenzza extends Activity {
 						@Override
 						public void onClick(View v) {
 							// TODO Auto-generated method stub
-							finish();
+							Intent finish = new Intent(partenzza.this, Read.class);
+							startActivity(finish);
 							
 						}
 					});
