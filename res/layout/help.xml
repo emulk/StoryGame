@@ -48,7 +48,7 @@
         android:shadowDx="10"
         android:shadowRadius="10"
         android:text="@string/HelpGame"
-        android:textColor="@color/Yellow"
+        android:textColor="@color/SkyBlue"
         android:textSize="20sp" />
 
 </RelativeLayout>

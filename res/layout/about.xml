@@ -20,7 +20,7 @@
         
         android:padding="20dp"
       	android:textColor="@color/Yellow" 
-        android:background="@color/DarkGreen"
+       
         android:text="@string/Info"
         android:textSize="20sp" />
 

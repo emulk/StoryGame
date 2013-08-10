@@ -37,7 +37,8 @@ public class Read extends Activity {
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
 				
-				finish();
+				Intent indietro = new Intent(Read.this, MainActivity.class);
+				startActivity(indietro);
 			}
 		});
     }
