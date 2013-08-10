@@ -51,6 +51,7 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
         android:background="@drawable/redbutton"
+        
         android:text="@string/avanti" />
 
 </RelativeLayout>

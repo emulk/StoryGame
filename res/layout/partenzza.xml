@@ -18,7 +18,7 @@
         android:layout_marginTop="21dp"
        
         android:textSize="14sp"
-      android:scrollHorizontally="true"
+       android:scrollHorizontally="true"
          android:maxLines="18"
         android:scrollbars = "vertical"
         android:text="@string/story1" />

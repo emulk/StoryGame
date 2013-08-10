@@ -36,7 +36,7 @@ public class story1 extends Activity {
 		//textview.setMovementMethod(new ScrollingMovementMethod()); 
 		textview.setMovementMethod(new ScrollingMovementMethod());
 		textview.setText("Questo è un giorno come tutti gli altri nelle Terre Tormentate. Sono passati 4 mesi ormai da quando \"I Signori delle Tenebre\" hanno dichiarato"
-		+"guerra al mio paese, le prime luci del'alba iniziano a intravedersi all'orizonte e tra poco la grande campana d'oro inizierà a emettere un "
+		+"guerra al mio paese, le prime luci dell'alba iniziano a intravedersi all'orizonte e tra poco la grande campana d'oro inizierà a emettere un "
 		+"suono assordante come fa ogni mattina e indicherà ad ogni guerriero di questo paese che sara' tempo di addestramento."
 		+"Sono passati tre anni da quando sono entrato a fare parte dell' esercito reale, e sono stato promosso come \"Cavaliere\" delle Terre Tormentate"
 		+"quando riuscii a dimostrare il mio coraggio nelle tre Arti della Guerra che ogni uomo dovrebbe dimostrare per avere l'onore di farsi "

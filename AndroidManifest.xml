@@ -15,18 +15,24 @@
         android:theme="@style/AppTheme" >
         <activity
             android:name="it.example.storygame.MainActivity"
-            android:label="@string/app_name" >
+            android:label="@string/app_name" 
+            android:screenOrientation="portrait" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="About"></activity>
-        <activity android:name="Help"></activity>
-        <activity android:name="Read"></activity>
-        <activity android:name="story1"></activity>
-        <activity android:name="partenzza"></activity>
+        <activity android:name="About"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name="Help"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name="Read"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name="story1"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name="partenzza"
+            android:screenOrientation="portrait"></activity>
     </application>
 
 </manifest>
