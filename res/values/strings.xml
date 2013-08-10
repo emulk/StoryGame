@@ -19,6 +19,7 @@
 	<!-- Help -->
 	<string name="HelpGame">Come giocare:</string>
 	<string name="IndietroHelp">Indietro</string>
+	<string name="helpstory">help</string>
 	
 	<!-- Read -->
 	<string name="ReadTitle">Crea la tua storia</string>

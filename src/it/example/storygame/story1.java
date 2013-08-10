@@ -16,7 +16,6 @@ import android.widget.TextView;
 public class story1 extends Activity {
 	
 	TextView textview;
-	int count=0;
 	Button avanti;
 	Button second;
 	

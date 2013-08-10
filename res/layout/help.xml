@@ -10,33 +10,45 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".MainActivity" >
 
-    <TextView
-        android:id="@+id/textView1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="43dp"
-        android:clickable="true"
-        android:padding="20dp"
-       	android:textColor="@color/Yellow" 
-        android:background="@color/DarkGreen"
-        android:shadowDx="10"
-        android:shadowRadius="10"
-        android:text="@string/HelpGame"
-        android:textSize="30sp" />
-
     <Button
         android:id="@+id/read"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
-        android:layout_below="@+id/textView1"
-        android:layout_marginTop="122dp"
+        android:layout_alignParentBottom="true"
+       
+        
       
         android:background="@drawable/redbutton"
         android:textColor="@color/DarkBlue"
         android:text="@string/IndietroHelp" />
+
+    <TextView
+        android:id="@+id/helpstory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:maxLength="2000"
+        android:maxLines="18"
+        android:scrollbars="vertical"
+        android:text="@string/helpstory"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="2dp"
+        android:clickable="true"
+        android:padding="2dp"
+        android:shadowDx="10"
+        android:shadowRadius="10"
+        android:text="@string/HelpGame"
+        android:textColor="@color/Yellow"
+        android:textSize="20sp" />
 
 </RelativeLayout>
