@@ -35,17 +35,17 @@ public class story1 extends Activity {
 		//textview.setVerticalScrollBarEnabled(true); 
 		//textview.setMovementMethod(new ScrollingMovementMethod()); 
 		textview.setMovementMethod(new ScrollingMovementMethod());
-		textview.setText("Questo è un giorno come tutti gli altri nelle Terre Tormentate. Sono passati 4 mesi ormai da quando \"I Signori delle Tenebre\" hanno dichiarato"
+		textview.setText("Questo è un giorno come tutti gli altri nelle Terre Tormentate. Sono passati 4 mesi ormai da quando \"I Signori delle Tenebre\" hanno dichiarato "
 		+"guerra al mio paese, le prime luci dell'alba iniziano a intravedersi all'orizonte e tra poco la grande campana d'oro inizierà a emettere un "
 		+"suono assordante come fa ogni mattina e indicherà ad ogni guerriero di questo paese che sara' tempo di addestramento."
-		+"Sono passati tre anni da quando sono entrato a fare parte dell' esercito reale, e sono stato promosso come \"Cavaliere\" delle Terre Tormentate"
+		+"Sono passati tre anni da quando sono entrato a fare parte dell' esercito reale, e sono stato promosso come \"Cavaliere\" delle Terre Tormentate "
 		+"quando riuscii a dimostrare il mio coraggio nelle tre Arti della Guerra che ogni uomo dovrebbe dimostrare per avere l'onore di farsi "
-		+"chiamare \"Guerriero\". Ho imparato l'arte della guerra che molti riconoscono con il nome di \"controllo animale\" grazie alla mia amatissima"
-		+"madre, che era l'alchimista piu' conosciuta e rispettata di tutto il villaggio, ora ogni volta che mi alleno sono capace di comunicare"
-		+"con molti animali i quali mi informano delle posizioni dei miei nemici e mi danno dei preziosissimi consigli. Ed è stato sempre grazie a" 
-		+"lei, che all'eta di 7 anni mi ha  insegnato l'arte della \"Divinazione\", che ora riesco a capire le vere intenzioni della persona che ho di"
-		+"fronte e riesco a comunicare telepaticamente con ogni creatura che e' dotata di capacità psichiche. E per il mio dodicessimo compleanno" 
-		+"la mia amata madre mi insegno' l'arte della \"Sparizione\".... Questa tecnica mi permette di adattarmi all'ambiente circostante e mi rende capace"
+		+"chiamare \"Guerriero\". Ho imparato l'arte della guerra che molti riconoscono con il nome di \"controllo animale\" grazie alla mia amatissima "
+		+"madre, che era l'alchimista piu' conosciuta e rispettata di tutto il villaggio, ora ogni volta che mi alleno sono capace di comunicare "
+		+"con molti animali i quali mi informano delle posizioni dei miei nemici e mi danno dei preziosissimi consigli. Ed è stato sempre grazie a " 
+		+"lei, che all'eta di 7 anni mi ha  insegnato l'arte della \"Divinazione\", che ora riesco a capire le vere intenzioni della persona che ho di "
+		+"fronte e riesco a comunicare telepaticamente con ogni creatura che e' dotata di capacità psichiche. E per il mio dodicessimo compleanno " 
+		+"la mia amata madre mi insegno' l'arte della \"Sparizione\".... Questa tecnica mi permette di adattarmi all'ambiente circostante e mi rende capace "
 		+"di mascherare l'odore e il calore del mio corpo rendendomi invisibile agli occhi di tutti.");
 				
 		
@@ -85,19 +85,19 @@ public class story1 extends Activity {
 									
 									// TODO Auto-generated method stub
 									
-									textview.setBackgroundResource(R.drawable.death);
+									//textview.setBackgroundResource(R.drawable.death);
 									
 									textview = (TextView) findViewById(R.id.story1);
 									textview.setText("Mi alzo di colpo e mi lancio nel vuoto attraverso la finestra. Cado per tre metri e cado in piedi " +
 											"per poi sbattere violentemente il 	ginochio destro per terra e procurarmi una ferita che inizio a" +
 											" perdere sangue. Mi rialzo, senza pensare alla ferita e inizio a correre 	all'impazata, l'assasino mi" +
-											" corre dietro con un coltello in mano. All'orizonte vedo una guardia reale in servizio e inizio a gridare" +
+											" corre dietro con un coltello in mano. All'orizonte vedo una guardia reale in servizio e inizio a gridare " +
 											"con tutto il fiato che mi era rimasto. La guardia si acorge di me e inizia a corrermi incontro, tira fuori" +
-											" il suo arco e scoca una freccia con la quale trapassa il crani del assasino. Io vengo ricorso e" +
+											" il suo arco e scoca una freccia con la quale trapassa il cranio del assasino. Io vengo ricorso e" +
 											" tranquillizato ma poche ore dopo vengo ragiunto dal mio comandante il quale mi da la brutta notizia che" +
 											" a causa del mio disonore per la cavalleria ero stato escluso dal esercito. Torno a casa e inizio a pensare " +
-											"a al disonore che avevo causato alla mia famigli. Mi rendo conto che tutto quell'disonore era troppo " +
-											"	grande da soportare, prendo una corda e decido di impicarmi.");
+											" al disonore che avevo causato alla mia famigli. Mi rendo conto che tutto quell'disonore era troppo " +
+											"grande da soportare, prendo una corda e decido di impicarmi.");
 									
 									avanti.setText("Fine!");
 									avanti.setOnClickListener(new View.OnClickListener() {
@@ -158,7 +158,7 @@ public class story1 extends Activity {
 														textview=(TextView)findViewById(R.id.story1);
 														textview.setText("Scendo al lago sottostante e riempio un barilotto con l'acqua limpida" +
 																" che si trova al suo interno, ritono nella mia camera e inizio a pulire il sangue che aveva macchiato ogni cosa." +
-																"Una volta finito la stanza splendeva come non mai, ma davanti alla porta giace per terra il cadavere freddo e" +
+																" Una volta finito la stanza splendeva come non mai, ma davanti alla porta giace per terra il cadavere freddo e" +
 																" senza vita del assasino e come se non bastase sono di parecchie ore in ritardo per l'adestramento.");
 														
 														
@@ -198,7 +198,7 @@ public class story1 extends Activity {
 												textview=(TextView)findViewById(R.id.story1);
 												textview.setText("Afferro il sacco con forza e lo carico sopra il cavallo, salgo in groppa e parto in direzzione del bosco." +
 														" Scendo a cavallo per il ripido sentiero che si inoltra nella foresta di Freylund, mi inoltro al suo interno e " +
-														"in prossimita di un dirupo mi fermo per poi butare al suo interno il sacco");
+														" in prossimita di un dirupo mi fermo per poi butare al suo interno il sacco");
 												
 												avanti.setVisibility(View.INVISIBLE);
 												second.setText("Parti per l'adestramento!");
