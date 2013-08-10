@@ -83,7 +83,11 @@ public class story1 extends Activity {
 								
 								@Override
 								public void onClick(View v) {
+									
 									// TODO Auto-generated method stub
+									
+									textview.setBackgroundResource(R.drawable.death);
+									
 									textview = (TextView) findViewById(R.id.story1);
 									textview.setText("Mi alzo di colpo e mi lancio nel vuoto attraverso la finestra. Cado per tre metri e cado in piedi " +
 											"per poi sbattere violentemente il 	ginochio destro per terra e procurarmi una ferita che inizio a" +
