@@ -19,6 +19,7 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentTop="true"
+        android:background="@drawable/bluebutton"
         android:text="@string/story1" />
     <Button
         android:id="@+id/Indietroread"
@@ -27,7 +28,7 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
-        android:background="@color/Aqua"
+        android:background="@drawable/redbutton"
         android:text="@string/IndietroRead"
         android:textColor="@color/DarkBlue" />
 

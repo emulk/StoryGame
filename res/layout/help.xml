@@ -35,7 +35,7 @@
         android:layout_below="@+id/textView1"
         android:layout_marginTop="122dp"
       
-        android:background="@color/Aqua"
+        android:background="@drawable/redbutton"
         android:textColor="@color/DarkBlue"
         android:text="@string/IndietroHelp" />
 

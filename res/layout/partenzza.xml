@@ -32,9 +32,11 @@
         android:layout_alignParentRight="true"
         android:layout_marginBottom="17dp"
         android:gravity="center"
+        android:background="@drawable/redbutton"
         android:text="@string/indietro" />
 
     <Button
+        android:background="@drawable/redbutton"
         android:id="@+id/avanti"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

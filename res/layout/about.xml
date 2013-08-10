@@ -32,8 +32,9 @@
         android:layout_alignParentRight="true"
         android:layout_below="@+id/textView1"
         android:layout_marginTop="122dp"
-       	android:background="@color/Aqua"
+       	
         android:textColor="@color/DarkBlue"
+        android:background="@drawable/redbutton"
         android:text="@string/sito" />
 
     <Button
@@ -45,7 +46,7 @@
         android:layout_below="@+id/sito"
         android:text="@string/indietro" 
         
-         android:background="@color/Aqua"
+         android:background="@drawable/redbutton"
         android:textColor="@color/DarkBlue"
          />
 

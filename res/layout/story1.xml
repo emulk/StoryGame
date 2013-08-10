@@ -37,7 +37,7 @@
         android:layout_alignParentRight="true"
         android:layout_marginBottom="17dp"
         android:gravity="center"
-      
+      android:background="@drawable/redbutton"
 
 
         android:text="@string/indietro" />
@@ -49,6 +49,7 @@
         android:layout_above="@+id/indietro"
         android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
+        android:background="@drawable/redbutton"
         android:text="@string/avanti" />
 
 </RelativeLayout>

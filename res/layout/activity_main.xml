@@ -36,7 +36,7 @@
         android:layout_alignParentRight="true"
         android:layout_below="@+id/textView1"
         android:layout_marginTop="122dp"
-        android:background="@color/Aqua"
+        android:background="@drawable/redbutton"
         android:textColor="@color/DarkBlue"
         
         android:text="@string/Read" />
@@ -50,7 +50,7 @@
         android:layout_below="@+id/readButton"
         android:angle="40"
         android:radius="50dp"
-        android:background="@color/Aqua"
+        android:background="@drawable/redbutton"
         android:textColor="@color/DarkBlue"
         android:text="@string/About" />
    		
@@ -62,7 +62,7 @@
         android:layout_alignLeft="@+id/aboutButton"
         android:layout_alignRight="@+id/aboutButton"
         android:layout_below="@+id/aboutButton"
-        android:background="@color/Aqua"
+        android:background="@drawable/redbutton"
         android:textColor="@color/DarkBlue"
         android:text="@string/Help" />
 
