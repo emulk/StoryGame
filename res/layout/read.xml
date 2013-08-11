@@ -39,7 +39,8 @@
         android:layout_alignLeft="@+id/story1"
         android:layout_alignRight="@+id/story1"
         android:layout_below="@+id/story1"
-        android:background="@drawable/bluebutton"
-        android:text="@string/guerra" />
+        android:background="@drawable/zedbutton2"
+        android:text="@string/guerra"
+        android:textColor="@color/FColor" />
 
 </RelativeLayout>

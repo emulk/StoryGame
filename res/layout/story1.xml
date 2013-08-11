@@ -20,7 +20,7 @@
         android:maxLines="18"
         android:scrollbars="vertical"
         android:text="@string/story1"
-        android:textColor="@color/FColor"
+        android:textColor="@color/FColor2"
         android:textSize="14sp" />
 
     <Button

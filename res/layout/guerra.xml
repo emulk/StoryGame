@@ -2,7 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="fill_parent"
-    
+    android:background="@color/BgColor"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
@@ -10,24 +10,18 @@
     tools:context=".Guerra" >
 
     <TextView
-         android:id="@+id/guerrastory"
+        android:id="@+id/guerrastory"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="21dp"
-        android:textSize="14sp"
-       android:maxLines="18"
-        android:scrollbars = "vertical"
-        android:maxLength ="2000" 
-       
-        
-      	
-		
-		
-	
-		
-        android:text="@string/guerrastory" />
+        android:maxLength="2000"
+        android:maxLines="18"
+        android:scrollbars="vertical"
+        android:text="@string/guerrastory"
+        android:textColor="@color/FColor2"
+        android:textSize="14sp" />
 
     <Button
         android:id="@+id/indietrog"
@@ -37,11 +31,10 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
         android:layout_marginBottom="17dp"
+        android:background="@drawable/zedbutton"
         android:gravity="center"
-      android:background="@drawable/redbutton"
-
-
-        android:text="@string/indietrog" />
+        android:text="@string/indietrog"
+        android:textColor="@color/FColor" />
 
     <Button
         android:id="@+id/avantig"
@@ -50,7 +43,8 @@
         android:layout_above="@+id/indietrog"
         android:layout_alignLeft="@+id/indietrog"
         android:layout_alignParentRight="true"
-        android:background="@drawable/redbutton"
-        android:text="@string/avantig" />
+        android:background="@drawable/zedbutton"
+        android:text="@string/avantig"
+        android:textColor="@color/FColor" />
 
 </RelativeLayout>
