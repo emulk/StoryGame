@@ -50,4 +50,16 @@
         android:background="@drawable/zedbutton"
          />
 
+    <Button
+        android:id="@+id/rate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/sito"
+        android:layout_alignLeft="@+id/sito"
+        android:layout_alignRight="@+id/sito"
+        android:layout_marginBottom="51dp"
+        android:background="@drawable/zedbutton"
+        android:text="@string/rate"
+        android:textColor="@color/FColor" />
+
 </RelativeLayout>

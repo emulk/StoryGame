@@ -19,6 +19,7 @@
         android:layout_alignParentTop="true"
         android:background="@drawable/zedbutton2"
         android:text="@string/story1"
+        
         android:textColor="@color/FColor" />
 
     <Button
@@ -29,6 +30,7 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
         android:text="@string/IndietroRead"
+       
         android:textColor="@color/FColor"
         android:background="@drawable/zedbutton" />
 
@@ -41,6 +43,38 @@
         android:layout_below="@+id/story1"
         android:background="@drawable/zedbutton2"
         android:text="@string/guerra"
+       
         android:textColor="@color/FColor" />
+
+    <ImageButton
+        android:id="@+id/favorite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/guerra"
+        android:layout_below="@+id/guerra"
+        android:background="#00ffffff"
+        android:onClick=""
+        android:contentDescription="TODO"
+        android:src="@drawable/star" />
+
+    <ImageButton
+        android:id="@+id/ImageButton01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/favorite"
+        android:layout_toLeftOf="@+id/favorite"
+        android:background="#00ffffff"
+        android:contentDescription="TODO"
+        android:src="@drawable/star" />
+
+    <ImageButton
+        android:id="@+id/ImageButton02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/ImageButton01"
+        android:layout_toLeftOf="@+id/ImageButton01"
+        android:background="#00ffffff"
+        android:contentDescription="TODO"
+        android:src="@drawable/star" />
 
 </RelativeLayout>

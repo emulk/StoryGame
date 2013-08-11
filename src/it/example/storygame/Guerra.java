@@ -25,7 +25,7 @@ public class Guerra extends Activity {
 		setContentView(R.layout.guerra);
 		
 		second = (Button)findViewById(R.id.indietrog);
-		second.setVisibility(View.INVISIBLE);
+		//second.setVisibility(View.INVISIBLE);
 		
 		//inizio
 		textview = (TextView) findViewById(R.id.guerrastory);
@@ -55,6 +55,7 @@ public class Guerra extends Activity {
 				
 		
 		 avanti = (Button)findViewById(R.id.avantig);
+		 avanti.setText("Rimani sotto l'esercito di Ardus!");
 		 avanti.setOnClickListener(new View.OnClickListener() {
 			
 			@Override
@@ -63,12 +64,20 @@ public class Guerra extends Activity {
 				
 				//seconda schermata
 				textview = (TextView) findViewById(R.id.guerrastory);
-				textview.setText("Mi alzo in piedi per preparare la mia borsa e partire come ogni giorno ormai da tre lunghissimi anni per il" +
-						" campo d'addestramento. Guardo fuori dalla finestra e l'atmosfera è stranamente silenziosa, la brina del mattino luccica " +
-						"sui merli delle torri, l'aria e pungente. " );
+				textview.setText("I due gruppi si formano velocemente, ma ciò vorrebbe dire 10 cavalieri in meno per proteggere la nostra città." +
+						" Vediamo i due gruppi dei volontari partire, e dopo pochi minuti sono fuori dalla nostra vista. La testa inizia a farmi" +
+						" male , inizio ad avere mille dubbi e mille domande contemporaneamente: \n " +
+						" -E se gli alleati non fossero intervenuti in tempo ? " +
+						"\n -E se non eravamo abbastanza forti per tenere testa al esercito nemico fino all'arrivo dei rinforzi? " +
+						"\n -E se la vita di tutti noi non sarebbe bastata come prezzo per vincere questa guerra? " +
+						"\n -E se fosse una guerra già persa in partenza ? ....." +
+						" \"Cavalieri delle terre tormentate, il nemico e alle porte. Ora dipende tutto da noi , scegliete se combattere per " +
+						" la libertà anche a prezzo della vostra vita,  o arrenderci per la paura e vivere nella vergogna e sotto " +
+						" l'assedio del nemico \" Era la voce del capitano che suonava fiera e impetuosa. " +
+						" \"Entriamo in città e iniziamo i preparativi per la difesa e il contro attacco \".  " );
 				
 				//1 prima scelta
-				avanti.setText("Ritorna a dorimire");
+				avanti.setText("Esegui gli ordini");
 				avanti.setOnClickListener(new View.OnClickListener() {
 						
 						@Override
@@ -77,10 +86,10 @@ public class Guerra extends Activity {
 							
 							
 							textview = (TextView) findViewById(R.id.guerrastory);
-							textview.setText("Dopo tre ore di sonno vengo svegliato dal rumore assordante che la porta produce cadendo per terra e " +
-									"frantumandosi in mille pezzi.In controluce appare la faccia di un assasino, era li per derubarmi." +
-									" A 40 centimetri alla destra del letto c'era la finestra aperta che dava sul lago, mentre sopra la sedia " +
-									"sulla mia sinistra lucicava l'argento della spada che avevo ereditato dal mio defunto padre. " );
+							textview.setText("Eseguo gli ordini del capitano ed entriamo dentro le mura, e l'immensa porta vine chiusa alle " +
+									"nostre spalle, da quel momento nessuno poteva più entrare o uscire dalla città. " +
+									"Ma non appena scendiamo da cavallo ci accorgiamo del immenso problema, eravamo in pochi e i nemici a" +
+									" differenza nostra non finivano più. Si avvicinavano sempre di più e inquotevano sempre più paura e timore. " );
 							
 							avanti.setText("Buttati dalla finestra!");
 							avanti.setOnClickListener(new View.OnClickListener() {
@@ -223,14 +232,23 @@ public class Guerra extends Activity {
 									}
 								});
 								
-								second.setText("Parti per l'addestramento!");
+								second.setText("Fuggi in groppa al cavallo!");
 								second.setOnClickListener(new View.OnClickListener() {
 									
 									@Override
 									public void onClick(View v) {
 										// TODO an other activity
-										Intent second = new Intent (Guerra.this, partenzza.class);
-										startActivity(second);
+										textview=(TextView)findViewById(R.id.guerrastory);
+										textview.setText("Vedevo negli occhi dei miei compagni la paura e contemporamente la speranza ." +
+												" Ma se fossi scapato avrei avuto piu' possibilita' di sopravivenza. Potevo rifugiarmi nella " +
+												"città vicina di Nedres , entrero a fare parte del loro esercitto, e salveremo la mia citta, in " +
+												"questo modo sembrero un eroe e avro la vita salva. E un piano geniale. Mentre gli altri iniziano a rientrare in citta io mi volto dall'altra parte e sparisco nel bosco." +
+												" Volevo raggiungere gli altri cavalieri che erano partiti prima di me, ma ormai era troppo tardi, mi lancio a tutta velocità per " +
+												"allontanarmi il più possibile dal mio villaggio, mi indentro sempre di più nel bosco, fino ad arrivare alla fonte in mezzo al bosco," +
+												" mi fermo per abbeverare il mio cavallo, ma alle mie spalle spuntano tre cavalieri. No, non potevano esser dei nemici, " +
+												"era passato cosi poco tempo, non avrebbero fatto in tempo ad essere già qui. Si avvicinano, scendono da cavallo e..., senza neanche" +
+												" che mi accorga di ciò che stava succedendo mi ritrovo per tera, senza vita. Ora capisco,  il comandante aveva mandato tre cavalieri " +
+												"a cercarmi, ero a tutti i diritti un traditore, era ovvio, non avrebbe mai permesso che mi allontanassi dal villaggio come se nulla fosse, magari avrei potuto vendermi ai nemici, informarli dei punti deboli dell'villaggio e condanare cosi tutti i miei amici.");
 									}
 								});
 								
@@ -242,25 +260,87 @@ public class Guerra extends Activity {
 						}
 					});
 				second.setVisibility(View.VISIBLE);
-				second.setText("Avvisare gli alleati!");
+				second.setText("Diserta in groppa al cavallo");
 				second.setOnClickListener(new View.OnClickListener() {
 					
 					@Override
 					public void onClick(View v) {
 						// TODO an other activity
 						textview=(TextView)findViewById(R.id.guerrastory);
-						textview.setText("Non me la sentivo di rimanere nel villaggio, sarebbe stato inutile, avrei dovuto aspettare gli rinforzi senza poter fare " +
-								"nulla, impotente, non e questo ciò che voglio, io voglio salvare il mio villaggio, la terra dove sono nato," +
-								" i miei amici, la mia casa, tutto ciò che ho si trova qui non posso permettermi di perderla, la cosa migliore che posso fare e avvisare gli alleati e schiacciare l'esercito oscuro delle tenebre. ");
-						
+						textview.setText("Vedevo negli occhi dei miei compagni la paura e contemporamente la speranza ." +
+								" Ma se fossi scapato avrei avuto piu' possibilita' di sopravivenza. Potevo rifugiarmi nella " +
+								"città vicina di Nedres , entrero a fare parte del loro esercitto, e salveremo la mia citta, in " +
+								"questo modo sembrero un eroe e avro la vita salva. E un piano geniale. Mentre gli altri iniziano a rientrare in citta io mi volto dall'altra parte e sparisco nel bosco." +
+								" Volevo raggiungere gli altri cavalieri che erano partiti prima di me, ma ormai era troppo tardi, mi lancio a tutta velocità per " +
+								"allontanarmi il più possibile dal mio villaggio, mi indentro sempre di più nel bosco, fino ad arrivare alla fonte in mezzo al bosco," +
+								" mi fermo per abbeverare il mio cavallo, ma alle mie spalle spuntano tre cavalieri. No, non potevano esser dei nemici, " +
+								"era passato cosi poco tempo, non avrebbero fatto in tempo ad essere già qui. Si avvicinano, scendono da cavallo e..., senza neanche" +
+								" che mi accorga di ciò che stava succedendo mi ritrovo per tera, senza vita. Ora capisco,  il comandante aveva mandato tre cavalieri " +
+								"a cercarmi, ero a tutti i diritti un traditore, era ovvio, non avrebbe mai permesso che mi allontanassi dal villaggio come se nulla fosse, magari avrei potuto vendermi ai nemici, informarli dei punti deboli dell'villaggio e condanare cosi tutti i miei amici.");
+						avanti.setVisibility(View.INVISIBLE);
+						second.setText("Fine!");
+						second.setOnClickListener(new View.OnClickListener() {
+							
+							@Override
+							public void onClick(View v) {
+								// TODO Auto-generated method stub
+								Intent finish = new Intent(Guerra.this, Read.class);
+								startActivity(finish);
+								
+							}
+							
+						});
 					}
 				});
+				
+			
+				
+				
+				
 				
 				
 			}
 		});
 		 
-		
+		 	//second.setVisibility(View.VISIBLE);
+			second.setText("Avvisare gli alleati!");
+			second.setOnClickListener(new View.OnClickListener() {
+				
+				@Override
+				public void onClick(View v) {
+					// TODO an other activity
+					textview=(TextView)findViewById(R.id.guerrastory);
+					textview.setText("Non me la sentivo di rimanere nel villaggio, sarebbe stato inutile, avrei dovuto aspettare gli rinforzi senza poter fare " +
+							"nulla, impotente, non e questo ciò che voglio, io voglio salvare il mio villaggio, la terra dove sono nato," +
+							" i miei amici, la mia casa, tutto ciò che ho si trova qui non posso permettermi di perderla, la cosa migliore che posso fare e avvisare gli alleati e schiacciare l'esercito oscuro delle tenebre. ");
+					
+					avanti.setText("Avissa Nedres!");
+					avanti.setOnClickListener(new View.OnClickListener() {
+						
+						@Override
+						public void onClick(View v) {
+							// TODO Auto-generated method stub
+							textview=(TextView)findViewById(R.id.guerrastory);
+							textview.setText("Il villaggio di Nedres era uno dei pochi villagi alleati che avevamo. Si trovava a sud-est del campo d'adestramento , a circa 1 giorno e mezzo di cammino a cavallo.");
+							
+						}
+					});
+					second.setText("Vai a Murdunt!");
+					second.setOnClickListener(new View.OnClickListener() {
+						
+						@Override
+						public void onClick(View v) {
+							// TODO Auto-generated method stub
+							textview=(TextView)findViewById(R.id.guerrastory);
+							textview.setText("Partiamo tutti e cinque per murdunt, il viaggio sarebbe stato lungo e scomodo." +
+									" Per arrivare a Murdunt saremo dovuti passare sotto la montagna ghiacciati di Kermek, e avremo dovuto" +
+									" aggirare il lago di Mestia. Oppure potevamo aggirare la montagna ma ciò avrebbe allungato la strada" +
+									" di parecchio. Arrivati in prossimità della Montagna di Kermek ci troviamo di fronte alla decisione: ");
+						}
+					});
+				}
+			
+			});
 		
 		
 	}

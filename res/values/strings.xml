@@ -11,7 +11,9 @@
      
      
      <!-- About -->
-     <string name="Info">Volete saperene di più su di me? andate sul mio sito (ma anche no! xD):</string>	<string name="sito">About me</string>
+     <string name="Info">Volete saperene di più su di me? andate sul mio sito (ma anche no! xD):</string>	
+     <string name="rate">Rate us</string>
+     <string name="sito">emulk</string>
 	<string name="indietro">Indietro</string>
 	
 	
