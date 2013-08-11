@@ -12,12 +12,13 @@ import android.widget.Button;
 public class Read extends Activity {
 	Button Indietro;
 	Button story1;
+	Button guerra;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.read);
-        
+        //La prima gamestory del cavaliere oscuro
         story1=(Button)findViewById(R.id.story1);
         story1.setOnClickListener(new View.OnClickListener() {
 			
@@ -27,6 +28,17 @@ public class Read extends Activity {
 				Intent storyintent = new Intent(Read.this, story1.class);
 				startActivity(storyintent);
 				
+			}
+		});
+        //la seconda game story: il continuo del cavaliere oscuro
+        guerra=(Button)findViewById(R.id.guerra);
+        guerra.setOnClickListener(new View.OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				Intent guerraintent = new Intent(Read.this, Guerra.class);
+				startActivity(guerraintent);
 			}
 		});
         

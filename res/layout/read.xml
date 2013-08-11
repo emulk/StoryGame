@@ -32,4 +32,14 @@
         android:textColor="@color/FColor"
         android:background="@drawable/zedbutton" />
 
+    <Button
+        android:id="@+id/guerra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/story1"
+        android:layout_alignRight="@+id/story1"
+        android:layout_below="@+id/story1"
+        android:background="@drawable/bluebutton"
+        android:text="@string/guerra" />
+
 </RelativeLayout>

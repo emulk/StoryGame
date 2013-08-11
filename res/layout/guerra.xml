@@ -1,0 +1,56 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".Guerra" >
+
+    <TextView
+         android:id="@+id/guerrastory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="21dp"
+        android:textSize="14sp"
+       android:maxLines="18"
+        android:scrollbars = "vertical"
+        android:maxLength ="2000" 
+       
+        
+      	
+		
+		
+	
+		
+        android:text="@string/guerrastory" />
+
+    <Button
+        android:id="@+id/indietrog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="17dp"
+        android:gravity="center"
+      android:background="@drawable/redbutton"
+
+
+        android:text="@string/indietrog" />
+
+    <Button
+        android:id="@+id/avantig"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/indietrog"
+        android:layout_alignLeft="@+id/indietrog"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/redbutton"
+        android:text="@string/avantig" />
+
+</RelativeLayout>

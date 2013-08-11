@@ -23,12 +23,17 @@
 	<!-- Read -->
 	<string name="ReadTitle">Crea la tua storia</string>
 	<string name="story1">Il cavaliere oscuro</string>
-	<string name="story2">Il continuo: Il cavaliere oscuro</string>
-	<string name="story3">La signora in giallo</string>
+	<string name="guerra">.. La Guerra</string>
+	
 	<string name="IndietroRead">Indietro</string>
 	
 	<!-- story1 -->
 	<string name="avanti">Avanti</string>
+	
+	<!-- Guerra -->
+	<string name="guerrastory">Guerra</string>
+	<string name="avantig">Avanti</string>
+	<string name="indietrog">Indietro</string>
      
      
 </resources>
