@@ -17,6 +17,7 @@ public final class R {
         public static final int Aquamarine=0x7f040061;
         public static final int Azure=0x7f04002a;
         public static final int Beige=0x7f040027;
+        public static final int BgColor=0x7f04008c;
         public static final int Bisque=0x7f04000d;
         public static final int Black=0x7f04008b;
         public static final int BlanchedAlmond=0x7f04000b;
@@ -53,6 +54,12 @@ public final class R {
         public static final int DeepSkyBlue=0x7f040082;
         public static final int DimGray=0x7f040069;
         public static final int DodgerBlue=0x7f04007a;
+        /**  background in generale 
+         */
+        public static final int FColor=0x7f04008d;
+        /**  font color 
+         */
+        public static final int FColor2=0x7f04008e;
         public static final int FireBrick=0x7f040047;
         public static final int FloralWhite=0x7f040005;
         public static final int ForestGreen=0x7f040078;
@@ -166,11 +173,15 @@ public final class R {
         public static final int bluebutton=0x7f020000;
         public static final int death=0x7f020001;
         public static final int ic_launcher=0x7f020002;
-        public static final int icon16=0x7f020003;
-        public static final int icon32=0x7f020004;
-        public static final int icon48=0x7f020005;
-        public static final int icon72=0x7f020006;
-        public static final int redbutton=0x7f020007;
+        public static final int icon1=0x7f020003;
+        public static final int icon16=0x7f020004;
+        public static final int icon2=0x7f020005;
+        public static final int icon32=0x7f020006;
+        public static final int icon48=0x7f020007;
+        public static final int icon72=0x7f020008;
+        public static final int redbutton=0x7f020009;
+        public static final int zedbutton=0x7f02000a;
+        public static final int zedbutton2=0x7f02000b;
     }
     public static final class id {
         public static final int Indietroread=0x7f09000d;

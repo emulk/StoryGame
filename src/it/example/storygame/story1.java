@@ -85,7 +85,7 @@ public class story1 extends Activity {
 									
 									// TODO Auto-generated method stub
 									
-									//textview.setBackgroundResource(R.drawable.death);
+									textview.setBackgroundResource(R.drawable.death);
 									
 									textview = (TextView) findViewById(R.id.story1);
 									textview.setText("Mi alzo di colpo e mi lancio nel vuoto attraverso la finestra. Cado per tre metri e cado in piedi " +

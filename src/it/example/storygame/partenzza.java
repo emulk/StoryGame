@@ -79,7 +79,7 @@ public class partenzza extends Activity {
 								@Override
 								public void onClick(View v) {
 									// TODO Auto-generated method stub
-									//textview.setBackgroundResource(R.drawable.death);
+									textview.setBackgroundResource(R.drawable.death);
 									textview = (TextView) findViewById(R.id.story1);
 									textview.setText("Senza fermarmi neanche per un attimo, continuo l'inseguimento dei restanti malviventi, sono a pochi passi" +
 											" da loro quando ne ho abbastanza del inseguimento, tiro fuori l'arco e con la mano destra afferro un freccia, " +
@@ -220,7 +220,7 @@ public class partenzza extends Activity {
 															@Override
 															public void onClick(View v) {
 																// TODO Auto-generated method stub
-																//textview.setBackgroundResource(R.drawable.death);
+																textview.setBackgroundResource(R.drawable.death);
 																textview=(TextView)findViewById(R.id.story1);
 																textview.setText("Corro dentro la taverna in cerca di protezione, ma passato qualceh minuto al interno della " +
 																		" taverna, tra il fuggi fuggi generale, 	il fuoco inizia a inghiotire tutta la taverna. Due cavalieri nemici avevano dato fuoco alla taverna condanando tutti al suo interno alla morte.");
@@ -247,7 +247,7 @@ public class partenzza extends Activity {
 															@Override
 															public void onClick(View v) {
 																// TODO Auto-generated method stub
-																//textview.setBackgroundResource(R.drawable.death);
+																textview.setBackgroundResource(R.drawable.death);
 																textview=(TextView)findViewById(R.id.story1);
 																textview.setText("Dopo essere salito a cavallo, mi dirigo verso la zona d'armamento, spingo il cavallo a correre come non aveva mai fato. " +
 																		" Appena arrivo davanti alle garandi sale d'armamento, in lontananza vedo l'esercito nemico che avanzava, " +
@@ -288,7 +288,7 @@ public class partenzza extends Activity {
 																	@Override
 																	public void onClick(View v) {
 																		// TODO Auto-generated method stub
-																		//textview.setBackgroundResource(R.drawable.death);
+																		textview.setBackgroundResource(R.drawable.death);
 																		textview=(TextView)findViewById(R.id.story1);
 																		textview.setText("Arrendendomi ai nemici significava andare  incontro a morte certa, ma in quel momento non vedevo altra soluzione. " +
 																				"Due cavalieri si fermano dinanzi a me.Erano grossi e impetuosi, la loro corazza color argento respingevano i raggi " +
@@ -343,7 +343,7 @@ public class partenzza extends Activity {
 				@Override
 				public void onClick(View v) {
 					// TODO an other activity
-					//textview.setBackgroundResource(R.drawable.death);
+					textview.setBackgroundResource(R.drawable.death);
 					textview=(TextView)findViewById(R.id.story1);
 					textview.setText("Senza fermarmi neanche per un attimo, continuo fugire dei restanti malviventi, sono a pochi passi da loro" +
 							" quando ne ho abbastanza del inseguimento, tiro fuori l'arco e con la mano destra afferro un freccia, prendo la mira e lancio la freccia." +
