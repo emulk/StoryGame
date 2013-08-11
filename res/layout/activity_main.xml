@@ -2,13 +2,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    
+    android:background="@color/BgColor"
     android:gravity="center"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    
     tools:context=".MainActivity" >
 
     <TextView
@@ -41,10 +40,9 @@
         android:layout_alignParentRight="true"
         android:layout_below="@+id/textView1"
         android:layout_marginTop="122dp"
-        android:background="@drawable/redbutton"
-        android:textColor="@color/DarkBlue"
-        
-        android:text="@string/Read" />
+        android:background="@drawable/zedbutton"
+        android:text="@string/Read"
+        android:textColor="@color/FColor" />
 
     <Button
         android:id="@+id/aboutButton"
@@ -54,11 +52,10 @@
         android:layout_alignRight="@+id/readButton"
         android:layout_below="@+id/readButton"
         android:angle="40"
+        android:background="@drawable/zedbutton"
         android:radius="50dp"
-        android:background="@drawable/redbutton"
-        android:textColor="@color/DarkBlue"
-        android:text="@string/About" />
-   		
+        android:text="@string/About"
+        android:textColor="@color/FColor" />
 
     <Button
         android:id="@+id/helpButton"
@@ -67,8 +64,8 @@
         android:layout_alignLeft="@+id/aboutButton"
         android:layout_alignRight="@+id/aboutButton"
         android:layout_below="@+id/aboutButton"
-        android:background="@drawable/redbutton"
-        android:textColor="@color/DarkBlue"
-        android:text="@string/Help" />
+        android:background="@drawable/zedbutton"
+        android:text="@string/Help"
+        android:textColor="@color/FColor" />
 
 </RelativeLayout>

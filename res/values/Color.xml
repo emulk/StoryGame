@@ -140,4 +140,7 @@
  <color name="DarkBlue">#00008B</color>
  <color name="Navy">#000080</color>
  <color name="Black">#000000</color>
+   <color name="BgColor">#222222</color>  <!-- background in generale -->
+ <color name="FColor">#FBFBFB</color>   <!-- font color -->
+ <color name="FColor2">#3A617E</color>
 </resources>

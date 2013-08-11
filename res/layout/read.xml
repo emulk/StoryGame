@@ -2,15 +2,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    
+    android:background="@color/BgColor"
     android:gravity="center"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".MainActivity" >
-
-    
 
     <Button
         android:id="@+id/story1"
@@ -19,8 +17,10 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentTop="true"
-        android:background="@drawable/bluebutton"
-        android:text="@string/story1" />
+        android:background="@drawable/zedbutton2"
+        android:text="@string/story1"
+        android:textColor="@color/FColor" />
+
     <Button
         android:id="@+id/Indietroread"
         android:layout_width="wrap_content"
@@ -28,8 +28,8 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
-        android:background="@drawable/redbutton"
         android:text="@string/IndietroRead"
-        android:textColor="@color/DarkBlue" />
+        android:textColor="@color/FColor"
+        android:background="@drawable/zedbutton" />
 
 </RelativeLayout>
