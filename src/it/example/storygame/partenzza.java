@@ -89,7 +89,7 @@ public class partenzza extends Activity {
 											" avesse abbastanza di scapare e che finalmente voleva arrendersi e andare in contro alla morte. Quando ero a pochi passi dal mio " +
 											" bersaglio 10 uomini armati mi circondano quatro dei quali mi tenevano sotto tiro con l'arco. Ero finito in trapola, una frecia mi " +
 											" colpisce , trapassandomi una spalla. Questa era la fine per me, intanto il malvivente che stavo inseguendo si avvicina a me e tria fuori " +
-											" un mazza, si ferma davanti a me e sussura poche parole che non riesco a capire, dopo di che i da il colpo di grazia.");
+											" un mazza, si ferma davanti a me e sussura poche parole che non riesco a capire, dopo di che mi da il colpo di grazia.");
 									
 									
 							
@@ -247,7 +247,7 @@ public class partenzza extends Activity {
 															@Override
 															public void onClick(View v) {
 																// TODO Auto-generated method stub
-																textview.setBackgroundResource(R.drawable.death);
+																//textview.setBackgroundResource(R.drawable.death);
 																textview=(TextView)findViewById(R.id.story1);
 																textview.setText("Dopo essere salito a cavallo, mi dirigo verso la zona d'armamento, spingo il cavallo a correre come non aveva mai fato. " +
 																		" Appena arrivo davanti alle garandi sale d'armamento, in lontananza vedo l'esercito nemico che avanzava, " +
