@@ -34,82 +34,47 @@
         android:textColor="@color/FColor"
         android:background="@drawable/zedbutton" />
 
-    <ImageButton
-        android:id="@+id/star3"
+    <Button
+        android:id="@+id/guerra"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/star2"
-        android:layout_toLeftOf="@+id/star2"
-        android:background="#00ffffff"
-        android:contentDescription="TODO"
-        android:inputType="textEmailAddress|textNoSuggestions"
-        android:src="@drawable/star" />
+        android:layout_alignLeft="@+id/story1"
+        android:layout_alignRight="@+id/story1"
+        android:layout_below="@+id/story1"
+        android:background="@drawable/zedbutton2"
+        android:text="@string/guerra"
+       
+        android:textColor="@color/FColor" />
 
     <ImageButton
-        android:id="@+id/star2"
+        android:id="@+id/favorite"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignRight="@+id/guerra"
         android:layout_below="@+id/guerra"
         android:background="#00ffffff"
+        android:onClick=""
         android:contentDescription="TODO"
-        android:inputType="textEmailAddress|textNoSuggestions"
         android:src="@drawable/star" />
 
     <ImageButton
         android:id="@+id/ImageButton01"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/star3"
-        android:layout_toLeftOf="@+id/star3"
+        android:layout_alignTop="@+id/favorite"
+        android:layout_toLeftOf="@+id/favorite"
         android:background="#00ffffff"
         android:contentDescription="TODO"
-        android:inputType="textEmailAddress|textNoSuggestions"
         android:src="@drawable/star" />
 
     <ImageButton
         android:id="@+id/ImageButton02"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
-        android:layout_below="@+id/story1"
+        android:layout_alignTop="@+id/ImageButton01"
+        android:layout_toLeftOf="@+id/ImageButton01"
         android:background="#00ffffff"
         android:contentDescription="TODO"
-        android:inputType="textEmailAddress|textNoSuggestions"
         android:src="@drawable/star" />
-
-    <ImageButton
-        android:id="@+id/ImageButton03"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/ImageButton02"
-        android:layout_toRightOf="@+id/ImageButton01"
-        android:background="#00ffffff"
-        android:contentDescription="TODO"
-        android:inputType="textEmailAddress|textNoSuggestions"
-        android:src="@drawable/star" />
-
-    <ImageButton
-        android:id="@+id/ImageButton04"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/ImageButton03"
-        android:layout_toLeftOf="@+id/ImageButton03"
-        android:background="#00ffffff"
-        android:contentDescription="TODO"
-        android:inputType="textEmailAddress|textNoSuggestions"
-        android:src="@drawable/star" />
-
-    <Button
-        android:id="@+id/guerra"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/story1"
-        android:layout_alignRight="@+id/ImageButton02"
-        android:layout_below="@+id/ImageButton02"
-        android:layout_marginTop="17dp"
-        android:background="@drawable/zedbutton2"
-        android:text="@string/guerra"
-        android:textColor="@color/FColor" />
 
 </RelativeLayout>

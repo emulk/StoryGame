@@ -3,8 +3,8 @@
     <item android:state_pressed="true"
           android:drawable="@drawable/button_pressed" /> <!-- pressed -->
     <item android:state_focused="true"
-          android:drawable="@drawable/button_pressed" /> <!-- focused -->
+          android:drawable="@drawable/button_focused" /> <!-- focused -->
     <item android:state_hovered="true"
-          android:drawable="@drawable/button_pressed" /> <!-- hovered -->
+          android:drawable="@drawable/button_focused" /> <!-- hovered -->
     <item android:drawable="@drawable/button_normal" /> <!-- default -->
 </selector>
