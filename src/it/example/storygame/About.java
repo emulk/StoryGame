@@ -2,7 +2,9 @@ package it.example.storygame;
 
 import android.net.Uri;
 import android.os.Bundle;
+import android.os.Vibrator;
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
 import android.view.Menu;
 import android.view.View;
@@ -23,7 +25,8 @@ public class About extends Activity {
 			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
-				
+				Vibrator vb = (Vibrator)   getSystemService(Context.VIBRATOR_SERVICE);
+	            vb.vibrate(100);
 				finish();
 			}
 		});
@@ -39,7 +42,8 @@ public class About extends Activity {
 			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
-				
+				Vibrator vb = (Vibrator)   getSystemService(Context.VIBRATOR_SERVICE);
+	            vb.vibrate(100);
 				 startActivity( sitointent );
 				
 			}

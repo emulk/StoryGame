@@ -2,7 +2,9 @@ package it.example.storygame;
 
 
 import android.os.Bundle;
+import android.os.Vibrator;
 import android.app.Activity;
+import android.content.Context;
 import android.text.method.ScrollingMovementMethod;
 import android.view.Menu;
 import android.view.View;
@@ -33,6 +35,8 @@ public class Help extends Activity {
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
 				finish();
+				Vibrator vb = (Vibrator)   getSystemService(Context.VIBRATOR_SERVICE);
+	            vb.vibrate(100);
 				
 			}
 		});
