@@ -107,7 +107,7 @@ public class Read extends Activity {
     		public void onRatingChanged(RatingBar ratingBar, float rating,
     			boolean fromUser) {
      
-    			txtRatingValue.setText(String.valueOf(rating));
+    			txtRatingValue2.setText(String.valueOf(rating));
      
     		}
     	});
