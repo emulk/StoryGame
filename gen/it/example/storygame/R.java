@@ -177,29 +177,27 @@ public final class R {
         public static final int button_pressed=0x7f020004;
         public static final int death=0x7f020005;
         public static final int ic_launcher=0x7f020006;
-        public static final int icon=0x7f020007;
-        public static final int icon1=0x7f020008;
-        public static final int icon16=0x7f020009;
-        public static final int icon2=0x7f02000a;
-        public static final int icon32=0x7f02000b;
-        public static final int icon48=0x7f02000c;
-        public static final int icon72=0x7f02000d;
-        public static final int redbutton=0x7f02000e;
-        public static final int star=0x7f02000f;
-        public static final int zedbutton=0x7f020010;
-        public static final int zedbutton2=0x7f020011;
+        public static final int icon1=0x7f020007;
+        public static final int icon16=0x7f020008;
+        public static final int icon2=0x7f020009;
+        public static final int icon32=0x7f02000a;
+        public static final int icon48=0x7f02000b;
+        public static final int icon72=0x7f02000c;
+        public static final int redbutton=0x7f02000d;
+        public static final int star=0x7f02000e;
+        public static final int zedbutton=0x7f02000f;
+        public static final int zedbutton2=0x7f020010;
     }
     public static final class id {
-        public static final int ImageButton01=0x7f090012;
-        public static final int ImageButton02=0x7f090013;
-        public static final int ImageButton03=0x7f090014;
-        public static final int ImageButton04=0x7f090015;
+        public static final int ImageButton01=0x7f090011;
+        public static final int ImageButton02=0x7f090012;
         public static final int Indietroread=0x7f09000e;
         public static final int aboutButton=0x7f090005;
-        public static final int action_settings=0x7f090016;
+        public static final int action_settings=0x7f090013;
         public static final int avanti=0x7f09000d;
         public static final int avantig=0x7f090009;
-        public static final int guerra=0x7f090011;
+        public static final int favorite=0x7f090010;
+        public static final int guerra=0x7f09000f;
         public static final int guerrastory=0x7f090007;
         public static final int helpButton=0x7f090006;
         public static final int helpstory=0x7f09000b;
@@ -209,8 +207,6 @@ public final class R {
         public static final int read=0x7f09000a;
         public static final int readButton=0x7f090004;
         public static final int sito=0x7f090001;
-        public static final int star2=0x7f090010;
-        public static final int star3=0x7f09000f;
         public static final int story1=0x7f09000c;
         public static final int textView1=0x7f090000;
     }

@@ -1,9 +1,7 @@
 package it.example.storygame;
 
 import android.os.Bundle;
-import android.os.Vibrator;
 import android.app.Activity;
-import android.content.Context;
 import android.content.Intent;
 import android.view.Menu;
 import android.view.View;
@@ -27,9 +25,6 @@ public class MainActivity extends Activity {
 				// TODO Auto-generated method stub
 				Intent Helpintent = new Intent (MainActivity.this, Help.class);
 				startActivity(Helpintent);
-				 Vibrator vb = (Vibrator)   getSystemService(Context.VIBRATOR_SERVICE);
-		            vb.vibrate(100);
-		           
 				
 			}
 		});
@@ -44,8 +39,6 @@ public class MainActivity extends Activity {
 				
 				Intent Readintent = new Intent(MainActivity.this, Read.class);
 				startActivity(Readintent);
-				Vibrator vb = (Vibrator)   getSystemService(Context.VIBRATOR_SERVICE);
-	            vb.vibrate(100);
 			}
 		});
         
@@ -60,8 +53,6 @@ public class MainActivity extends Activity {
 				
 				Intent Aboutintent = new Intent(MainActivity.this, About.class);
 				startActivity(Aboutintent);
-				Vibrator vb = (Vibrator)   getSystemService(Context.VIBRATOR_SERVICE);
-	            vb.vibrate(100);
 			}
 		});
         
