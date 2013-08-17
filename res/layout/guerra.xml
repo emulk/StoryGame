@@ -31,7 +31,7 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
         android:layout_marginBottom="17dp"
-        android:background="@drawable/zedbutton"
+        android:background="@drawable/zedbutton3"
         android:gravity="center"
         android:text="@string/indietrog"
         android:textColor="@color/FColor" />
@@ -43,7 +43,7 @@
         android:layout_above="@+id/indietrog"
         android:layout_alignLeft="@+id/indietrog"
         android:layout_alignParentRight="true"
-        android:background="@drawable/zedbutton"
+        android:background="@drawable/zedbutton3"
         android:text="@string/avantig"
         android:textColor="@color/FColor" />
 
