@@ -101,13 +101,13 @@ public class Read extends Activity {
     	ratingBar = (RatingBar) findViewById(R.id.ratingstory1);
     	txtRatingValue = (TextView) findViewById(R.id.txtRatingValue);
      
-    	//if rating value is changed,
-    	//display the current rating value in the result (textview) automatically
+    	//se cambia il valore della votazione
+    	//viene visualizzato il nuovo valore nella textview
     	ratingBar.setOnRatingBarChangeListener(new OnRatingBarChangeListener() {
     		public void onRatingChanged(RatingBar ratingBar, float rating,
     			boolean fromUser) {
      
-    			txtRatingValue2.setText(String.valueOf(rating));
+    			txtRatingValue.setText(String.valueOf(rating));
      
     		}
     	});
@@ -137,7 +137,7 @@ public class Read extends Activity {
     
       
       
-
+/*
       
   	public void addListenerOnRatingBar2() {
   		// TODO Auto-generated method stub
@@ -176,7 +176,7 @@ public class Read extends Activity {
   	    	});
   		}
   
-
+*/
 	 
 	@Override
     public boolean onCreateOptionsMenu(Menu menu) {
