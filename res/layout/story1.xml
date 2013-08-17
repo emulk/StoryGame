@@ -33,7 +33,7 @@
         android:layout_marginBottom="17dp"
         android:gravity="center"
 		android:textColor="@color/FColor"
-        android:background="@drawable/zedbutton"
+        android:background="@drawable/zedbutton3"
         android:text="@string/indietro" />
 
     <Button
@@ -43,8 +43,8 @@
         android:layout_above="@+id/indietro"
         android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
-        android:text="@string/avanti" 
-        android:textColor="@color/FColor"
-        android:background="@drawable/zedbutton"/>
+        android:background="@drawable/zedbutton3"
+        android:text="@string/avanti"
+        android:textColor="@color/FColor" />
 
 </RelativeLayout>
