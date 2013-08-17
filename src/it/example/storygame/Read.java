@@ -34,8 +34,8 @@ public class Read extends Activity {
         setContentView(R.layout.read);
         addListenerOnRatingBar();
         addListenerOnButton();
-        //addListenerOnRatingBar2();
-        //addListenerOnButton2();
+        addListenerOnRatingBar2();
+        addListenerOnButton2();
         //La prima gamestory del cavaliere oscuro
         story1=(Button)findViewById(R.id.story1);
         story1.setOnClickListener(new View.OnClickListener() {
@@ -96,7 +96,56 @@ public class Read extends Activity {
 
     
     
-    public void addListenerOnRatingBar() {
+    private void addListenerOnButton2() {
+		// TODO Auto-generated method stub
+    	ratingBar2 = (RatingBar) findViewById(R.id.ratingstory2);
+    	btnSubmit2 = (Button) findViewById(R.id.btnSubmit2);
+     
+    	//if click on me, then display the current rating value.
+    	btnSubmit2.setOnClickListener(new OnClickListener() {
+     
+    		@Override
+    		public void onClick(View v) {
+     
+    			Toast.makeText(Read.this,
+    				String.valueOf(ratingBar2.getRating()),
+    					Toast.LENGTH_SHORT).show();
+     
+    		}
+     
+    	});
+		
+	}
+
+
+
+
+
+
+	private void addListenerOnRatingBar2() {
+		// TODO Auto-generated method stub
+		ratingBar2 = (RatingBar) findViewById(R.id.ratingstory2);
+    	txtRatingValue2 = (TextView) findViewById(R.id.txtRatingValue2);
+     
+    	//se cambia il valore della votazione
+    	//viene visualizzato il nuovo valore nella textview
+    	ratingBar2.setOnRatingBarChangeListener(new OnRatingBarChangeListener() {
+    		public void onRatingChanged(RatingBar ratingBar, float rating,
+    			boolean fromUser) {
+     
+    			txtRatingValue2.setText(String.valueOf(rating));
+     
+    		}
+    	});
+		
+	}
+
+
+
+
+
+
+	public void addListenerOnRatingBar() {
     	 
     	ratingBar = (RatingBar) findViewById(R.id.ratingstory1);
     	txtRatingValue = (TextView) findViewById(R.id.txtRatingValue);
@@ -137,46 +186,7 @@ public class Read extends Activity {
     
       
       
-/*
-      
-  	public void addListenerOnRatingBar2() {
-  		// TODO Auto-generated method stub
-      	ratingBar2 = (RatingBar) findViewById(R.id.ratingstory2);
-      	
-      	ratingBar2.setOnRatingBarChangeListener(new OnRatingBarChangeListener() {
-      		public void onRatingChanged(RatingBar ratingBar2, float rating,
-      			boolean fromUser) {
-       
-      			
-  				txtRatingValue.setText(String.valueOf(rating));
-       
-      		}
-      	});
-  		
-  	}
-  	
-  	
-  	 private void addListenerOnButton2() {
-  			// TODO Auto-generated method stub
-  	    	ratingBar2 = (RatingBar) findViewById(R.id.ratingstory2);
-  	    	
-  	     
-  	    	//if click on me, then display the current rating value.
-  	    	btnSubmit2.setOnClickListener(new OnClickListener() {
-  	     
-  	    		@Override
-  	    		public void onClick(View v) {
-  	     
-  	    			Toast.makeText(Read.this,
-  	    				String.valueOf(ratingBar2.getRating()),
-  	    					Toast.LENGTH_SHORT).show();
-  	     
-  	    		}
-  	     
-  	    	});
-  		}
-  
-*/
+
 	 
 	@Override
     public boolean onCreateOptionsMenu(Menu menu) {

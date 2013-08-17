@@ -192,12 +192,12 @@ public final class R {
     public static final class id {
         public static final int Indietroread=0x7f09000e;
         public static final int aboutButton=0x7f090005;
-        public static final int action1=0x7f090016;
         public static final int action_settings=0x7f090017;
         public static final int avanti=0x7f09000d;
         public static final int avantig=0x7f090009;
         public static final int btnSubmit=0x7f090010;
         public static final int btnSubmit2=0x7f090013;
+        public static final int checkBox1=0x7f090016;
         public static final int guerra=0x7f090011;
         public static final int guerrastory=0x7f090007;
         public static final int helpButton=0x7f090006;
