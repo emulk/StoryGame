@@ -190,15 +190,14 @@ public final class R {
         public static final int zedbutton2=0x7f020011;
     }
     public static final class id {
-        public static final int ImageButton01=0x7f090012;
-        public static final int ImageButton02=0x7f090013;
-        public static final int ImageButton03=0x7f090014;
-        public static final int ImageButton04=0x7f090015;
         public static final int Indietroread=0x7f09000e;
         public static final int aboutButton=0x7f090005;
-        public static final int action_settings=0x7f090016;
+        public static final int action1=0x7f090016;
+        public static final int action_settings=0x7f090017;
         public static final int avanti=0x7f09000d;
         public static final int avantig=0x7f090009;
+        public static final int btnSubmit=0x7f090010;
+        public static final int btnSubmit2=0x7f090013;
         public static final int guerra=0x7f090011;
         public static final int guerrastory=0x7f090007;
         public static final int helpButton=0x7f090006;
@@ -206,13 +205,15 @@ public final class R {
         public static final int indietro=0x7f090002;
         public static final int indietrog=0x7f090008;
         public static final int rate=0x7f090003;
+        public static final int ratingstory1=0x7f09000f;
+        public static final int ratingstory2=0x7f090012;
         public static final int read=0x7f09000a;
         public static final int readButton=0x7f090004;
         public static final int sito=0x7f090001;
-        public static final int star2=0x7f090010;
-        public static final int star3=0x7f09000f;
         public static final int story1=0x7f09000c;
         public static final int textView1=0x7f090000;
+        public static final int txtRatingValue=0x7f090015;
+        public static final int txtRatingValue2=0x7f090014;
     }
     public static final class layout {
         public static final int about=0x7f030000;
@@ -227,37 +228,39 @@ public final class R {
         public static final int main=0x7f080000;
     }
     public static final class string {
-        public static final int About=0x7f060005;
-        public static final int Help=0x7f060004;
+        public static final int About=0x7f060006;
+        public static final int Help=0x7f060005;
         /**  Help 
          */
-        public static final int HelpGame=0x7f06000a;
-        public static final int IndietroHelp=0x7f06000b;
-        public static final int IndietroRead=0x7f060010;
+        public static final int HelpGame=0x7f06000b;
+        public static final int IndietroHelp=0x7f06000c;
+        public static final int IndietroRead=0x7f060012;
         /**  About 
          */
-        public static final int Info=0x7f060006;
-        public static final int Read=0x7f060003;
+        public static final int Info=0x7f060007;
+        public static final int Read=0x7f060004;
         /**  Read 
          */
-        public static final int ReadTitle=0x7f06000d;
-        public static final int Titolo=0x7f060002;
+        public static final int ReadTitle=0x7f06000e;
+        public static final int Titolo=0x7f060003;
+        public static final int action1=0x7f060002;
         public static final int action_settings=0x7f060001;
         public static final int app_name=0x7f060000;
         /**  story1 
          */
-        public static final int avanti=0x7f060011;
-        public static final int avantig=0x7f060013;
-        public static final int guerra=0x7f06000f;
+        public static final int avanti=0x7f060013;
+        public static final int avantig=0x7f060015;
+        public static final int guerra=0x7f060010;
         /**  Guerra 
          */
-        public static final int guerrastory=0x7f060012;
-        public static final int helpstory=0x7f06000c;
-        public static final int indietro=0x7f060009;
-        public static final int indietrog=0x7f060014;
-        public static final int rate=0x7f060007;
-        public static final int sito=0x7f060008;
-        public static final int story1=0x7f06000e;
+        public static final int guerrastory=0x7f060014;
+        public static final int helpstory=0x7f06000d;
+        public static final int indietro=0x7f06000a;
+        public static final int indietrog=0x7f060016;
+        public static final int rate=0x7f060008;
+        public static final int sito=0x7f060009;
+        public static final int story1=0x7f06000f;
+        public static final int submit=0x7f060011;
     }
     public static final class style {
         /** 

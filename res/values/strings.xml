@@ -3,6 +3,7 @@
 
     <string name="app_name">Game Story</string>
     <string name="action_settings">Settings</string>
+    <string name="action1">Schermo attivo</string>
     <string name="Titolo">Game Story</string>
     
      <string name="Read">Read</string>
@@ -11,7 +12,7 @@
      
      
      <!-- About -->
-     <string name="Info">Volete saperene di più su di me? andate sul mio sito (ma anche no! xD):</string>	
+     <string name="Info">Volete saperene di più su di me? andate sul mio sito:</string>	
      <string name="rate">Rate us</string>
      <string name="sito">emulk</string>
 	<string name="indietro">Indietro</string>
@@ -26,6 +27,7 @@
 	<string name="ReadTitle">Crea la tua storia</string>
 	<string name="story1">Il cavaliere oscuro</string>
 	<string name="guerra">.. La Guerra</string>
+	<string name="submit">Vota</string>
 	
 	<string name="IndietroRead">Indietro</string>
 	

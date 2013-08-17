@@ -19,7 +19,6 @@
         android:layout_alignParentTop="true"
         android:background="@drawable/zedbutton2"
         android:text="@string/story1"
-        
         android:textColor="@color/FColor" />
 
     <Button
@@ -29,87 +28,79 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
+        android:background="@drawable/zedbutton"
         android:text="@string/IndietroRead"
-       
-        android:textColor="@color/FColor"
-        android:background="@drawable/zedbutton" />
+        android:textColor="@color/FColor" />
 
-    <ImageButton
-        android:id="@+id/star3"
+    <RatingBar
+        android:id="@+id/ratingstory1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/star2"
-        android:layout_toLeftOf="@+id/star2"
-        android:background="#00ffffff"
-        android:contentDescription="TODO"
-        android:inputType="textEmailAddress|textNoSuggestions"
-        android:src="@drawable/star" />
-
-    <ImageButton
-        android:id="@+id/star2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignRight="@+id/guerra"
-        android:layout_below="@+id/guerra"
-        android:background="#00ffffff"
-        android:contentDescription="TODO"
-        android:inputType="textEmailAddress|textNoSuggestions"
-        android:src="@drawable/star" />
-
-    <ImageButton
-        android:id="@+id/ImageButton01"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/star3"
-        android:layout_toLeftOf="@+id/star3"
-        android:background="#00ffffff"
-        android:contentDescription="TODO"
-        android:inputType="textEmailAddress|textNoSuggestions"
-        android:src="@drawable/star" />
-
-    <ImageButton
-        android:id="@+id/ImageButton02"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
+        android:layout_alignRight="@+id/story1"
         android:layout_below="@+id/story1"
-        android:background="#00ffffff"
-        android:contentDescription="TODO"
-        android:inputType="textEmailAddress|textNoSuggestions"
-        android:src="@drawable/star" />
+        android:numStars="4"
+        android:rating="2.0"
+        android:stepSize="1.0" />
 
-    <ImageButton
-        android:id="@+id/ImageButton03"
+    <Button
+        android:id="@+id/btnSubmit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/ImageButton02"
-        android:layout_toRightOf="@+id/ImageButton01"
-        android:background="#00ffffff"
-        android:contentDescription="TODO"
-        android:inputType="textEmailAddress|textNoSuggestions"
-        android:src="@drawable/star" />
-
-    <ImageButton
-        android:id="@+id/ImageButton04"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/ImageButton03"
-        android:layout_toLeftOf="@+id/ImageButton03"
-        android:background="#00ffffff"
-        android:contentDescription="TODO"
-        android:inputType="textEmailAddress|textNoSuggestions"
-        android:src="@drawable/star" />
+        android:layout_alignLeft="@+id/story1"
+        android:layout_alignTop="@+id/ratingstory1"
+        android:layout_toLeftOf="@+id/ratingstory1"
+        android:background="@drawable/zedbutton"
+        android:text="@string/submit" />
 
     <Button
         android:id="@+id/guerra"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/story1"
-        android:layout_alignRight="@+id/ImageButton02"
-        android:layout_below="@+id/ImageButton02"
-        android:layout_marginTop="17dp"
+        android:layout_alignLeft="@+id/btnSubmit"
+        android:layout_alignRight="@+id/ratingstory1"
+        android:layout_below="@+id/ratingstory1"
+        android:layout_marginTop="15dp"
         android:background="@drawable/zedbutton2"
         android:text="@string/guerra"
         android:textColor="@color/FColor" />
+
+    <RatingBar
+        android:id="@+id/ratingstory2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/guerra"
+        android:numStars="4"
+        android:rating="2.0"
+        android:stepSize="1.0" />
+
+    <Button
+        android:id="@+id/btnSubmit2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/guerra"
+        android:layout_alignRight="@+id/btnSubmit"
+        android:layout_below="@+id/guerra"
+        android:background="@drawable/zedbutton"
+        android:text="@string/submit" />
+
+    <TextView
+        android:id="@+id/txtRatingValue2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/guerra"
+        android:layout_alignBottom="@+id/guerra"
+        android:layout_alignRight="@+id/guerra"
+        android:layout_marginRight="39dp"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/txtRatingValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/story1"
+        android:layout_alignBottom="@+id/story1"
+        android:layout_alignLeft="@+id/txtRatingValue2"
+        android:text="" />
 
 </RelativeLayout>

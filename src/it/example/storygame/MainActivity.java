@@ -13,7 +13,7 @@ public class MainActivity extends Activity {
 	Button Help;
 	Button Read;
 	Button About;
-
+	
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -64,7 +64,6 @@ public class MainActivity extends Activity {
 	            vb.vibrate(100);
 			}
 		});
-        
         
        
         
