@@ -188,16 +188,18 @@ public final class R {
         public static final int star=0x7f02000f;
         public static final int zedbutton=0x7f020010;
         public static final int zedbutton2=0x7f020011;
+        public static final int zedbutton3=0x7f020012;
     }
     public static final class id {
         public static final int Indietroread=0x7f09000e;
         public static final int aboutButton=0x7f090005;
-        public static final int action_settings=0x7f090017;
+        public static final int action_settings1=0x7f090018;
+        public static final int action_settings2=0x7f090019;
+        public static final int action_settings3=0x7f09001a;
         public static final int avanti=0x7f09000d;
         public static final int avantig=0x7f090009;
         public static final int btnSubmit=0x7f090010;
         public static final int btnSubmit2=0x7f090013;
-        public static final int checkBox1=0x7f090016;
         public static final int guerra=0x7f090011;
         public static final int guerrastory=0x7f090007;
         public static final int helpButton=0x7f090006;
@@ -209,8 +211,10 @@ public final class R {
         public static final int ratingstory2=0x7f090012;
         public static final int read=0x7f09000a;
         public static final int readButton=0x7f090004;
+        public static final int screenon=0x7f090016;
         public static final int sito=0x7f090001;
         public static final int story1=0x7f09000c;
+        public static final int tema1=0x7f090017;
         public static final int textView1=0x7f090000;
         public static final int txtRatingValue=0x7f090015;
         public static final int txtRatingValue2=0x7f090014;
@@ -235,7 +239,7 @@ public final class R {
         public static final int HelpGame=0x7f06000b;
         public static final int IndietroHelp=0x7f06000c;
         public static final int IndietroRead=0x7f060012;
-        /**  About 
+        /**  Riconoscimenti 
          */
         public static final int Info=0x7f060007;
         public static final int Read=0x7f060004;

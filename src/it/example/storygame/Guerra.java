@@ -69,12 +69,12 @@ public class Guerra extends Activity {
 						" male , inizio ad avere mille dubbi e mille domande contemporaneamente: \n " +
 						" -E se gli alleati non fossero intervenuti in tempo ? " +
 						"\n -E se non eravamo abbastanza forti per tenere testa al esercito nemico fino all'arrivo dei rinforzi? " +
-						"\n -E se la vita di tutti noi non sarebbe bastata come prezzo per vincere questa guerra? " +
-						"\n -E se fosse una guerra già persa in partenza ? ....." +
-						" \"Cavalieri delle terre tormentate, il nemico e alle porte. Ora dipende tutto da noi , scegliete se combattere per " +
+						"\n -E se la vita di tutti noi non sarebbe bastata come prezzo per vincere questa guerra o questa battaglia? " +
+						"\n -E se fosse una guerra già persa in partenza ? " +
+						"\n.....\"Cavalieri delle terre tormentate, il nemico e alle porte. Ora dipende tutto da noi , scegliete se combattere per " +
 						" la libertà anche a prezzo della vostra vita,  o arrenderci per la paura e vivere nella vergogna e sotto " +
 						" l'assedio del nemico \" Era la voce del capitano che suonava fiera e impetuosa. " +
-						" \"Entriamo in città e iniziamo i preparativi per la difesa e il contro attacco \".  " );
+						" \"Entriamo in città e iniziamo i preparativi per la difesa e il contro attacco, salvermo il nostro paese\".  " );
 				
 				//1 prima scelta
 				avanti.setText("Esegui gli ordini");
@@ -86,12 +86,21 @@ public class Guerra extends Activity {
 							
 							
 							textview = (TextView) findViewById(R.id.guerrastory);
-							textview.setText("Eseguo gli ordini del capitano ed entriamo dentro le mura, e l'immensa porta vine chiusa alle " +
+							textview.setText("Eseguo gli ordini del capitano ed entriamo dentro le mura, l'immensa porta vine chiusa alle " +
 									"nostre spalle, da quel momento nessuno poteva più entrare o uscire dalla città. " +
 									"Ma non appena scendiamo da cavallo ci accorgiamo del immenso problema, eravamo in pochi e i nemici a" +
-									" differenza nostra non finivano più. Si avvicinavano sempre di più e inquotevano sempre più paura e timore. " );
+									" differenza nostra non finivano più. Si avvicinavano sempre di più e inquotevano sempre più paura e timore." +
+									"L'orizonte era nero, e io iniziavo a tremare, temevo che i miei compagni potessero sentire la mia paura, non volevo" +
+									" apparire come codardo, iniziavo a sperare che tutto ciò fosse solo un incubo, volevo svegliarmi, volevo dimenticare tutto." +
+									"\"Aprite tutti gli arsenali, datte un arma a chuiunque sia in grado di tenerla in mano\" era sempre il capitano che parlava" +
+									"\"portate le donne, i vecchi e i bambini in un posto sicuro\", la sua voce era sempre più cuppa e bassa." +
+									"\n-Un posto sicuro?" +
+									"\n-E dove? dove lo troviamo un posto sicuro?" +
+									"\"Amon porta gli indifesi nelle grotte\"" +
+									"-Ecco il mio compito, devo solo portare quelli che non possono combatere all'interno dell grotte, ma quanto avrebbero " +
+									"retto le grotte? " );
 							
-							avanti.setText("Buttati dalla finestra!");
+							avanti.setText("All'interno delle grotte");
 							avanti.setOnClickListener(new View.OnClickListener() {
 								
 								@Override
@@ -102,36 +111,96 @@ public class Guerra extends Activity {
 									//textview.setBackgroundResource(R.drawable.death);
 									
 									textview = (TextView) findViewById(R.id.guerrastory);
-									textview.setText("Mi alzo di colpo e mi lancio nel vuoto attraverso la finestra. Cado per tre metri e cado in piedi " +
-											"per poi sbattere violentemente il 	ginochio destro per terra e procurarmi una ferita che inizio a" +
-											" perdere sangue. Mi rialzo, senza pensare alla ferita e inizio a correre 	all'impazata, l'assasino mi" +
-											" corre dietro con un coltello in mano. All'orizonte vedo una guardia reale in servizio e inizio a gridare " +
-											"con tutto il fiato che mi era rimasto. La guardia si acorge di me e inizia a corrermi incontro, tira fuori" +
-											" il suo arco e scoca una freccia con la quale trapassa il cranio del assasino. Io vengo ricorso e" +
-											" tranquillizato ma poche ore dopo vengo ragiunto dal mio comandante il quale mi da la brutta notizia che" +
-											" a causa del mio disonore per la cavalleria ero stato escluso dal esercito. Torno a casa e inizio a pensare " +
-											" al disonore che avevo causato alla mia famigli. Mi rendo conto che tutto quell'disonore era troppo " +
-											"grande da soportare, prendo una corda e decido di impicarmi.");
+									textview.setText("Vedevo il terrore sulle faccia di tutti i citadini, i guerrieri cercavano di nasconedere il timore e la paura, " +
+											"ma i cittadini normali erano meno bravi, non riuscivano a nascondere i propri senttimenti, erano terrorizati." +
+											"Inizio a fare strada attraverso le scale, e scendo sempre più in profondità, si sente l'aria chiusa e l'odore putrefatto del legno." +
+											"Auando arrivo alla fine, seguito dai cittadini, vedo davanti a me un sacco di macerie, una delle pareti era quasi crollata del tutto." +
+											"Ma quella grotta si trovava ad est del paese, se butassimo giù il muro potevamo sorprendere il nemico alle spalle." +
+											"Salgo le scale e ritono in superficcie, vado dal capitono e li riferisco la mia idea." +
+											"Dopo averli raccontato tutto il capitano lascia la decisione a me." +
+											"\"Amon, se credi che il piano possa funzionare, porta con te altri 4 guerrieri, sceglili, e avicinatevi alle spalle del nemico," +
+											" ma non dovete attacare, non fatevi scoprire, cercate di racogliere più informazioni che potete e ritornate qui prima del calar del sole," +
+											"non un attimo prima, non un attimo dopo, se per quel ora non sarete qui chiuderemo le grotte e non avrete più nessun modo per rientrare" +
+											"all'interno delle mura\"");
 									
-									avanti.setText("Fine!");
+									avanti.setText("Scegli i cinque guerrieri");
 									avanti.setOnClickListener(new View.OnClickListener() {
 										
 										@Override
 										public void onClick(View v) {
 											// TODO Auto-generated method stub
-											finish();
-											
+											textview=(TextView)findViewById(R.id.guerrastory);
+											textview.setText("Scelgo i cnique guerrieri vicino a me, iniziamo a scendere nella grotta, arrivati " +
+													"in fondo alla grotta attraversiamo il muro attraverso il bucco fatto e usciamo in campo aperto." +
+													" Eravamo alle spalle dell'esercito oscuro, iniziamo ad avvicinarci, e a scorgere centinaia di orrori " +
+													"");
 										}
 									});
-									second.setVisibility(View.INVISIBLE);
+									second.setText("Agisci da solo");
+									second.setOnClickListener(new View.OnClickListener() {
+										
+										@Override
+										public void onClick(View v) {
+											// TODO Auto-generated method stub
+											textview=(TextView)findViewById(R.id.guerrastory);
+											textview.setText("Aggire in gruppo sarebbe stato troppo pericoloso, avviso il capitano che sarei andato da solo e" +
+													" scendo di nuovo nella grotta, intanto" +
+													" qualcuno aveva già fatto il bucco nel muro, il bucco era piccolo, ma bastava per passarci attraverso " +
+													" e uscire in campo aperto. Purtroppo non potevo avere un cavalo, era impossibile farlo scendere nella grotta," +
+													" ed era ancora più difficile farlo passare attraverso quel'piccolo bucco.");
+											avanti.setVisibility(View.INVISIBLE);
+											second.setText("Visualizza i nemici");
+											second.setOnClickListener(new View.OnClickListener() {
+												
+												@Override
+												public void onClick(View v) {
+													// TODO Auto-generated method stub
+													textview=(TextView)findViewById(R.id.guerrastory);
+													textview.setText("Esco dalla grotta, camino per un po in campo aperto per avvicinarmi sempre di più alle loro spalle" +
+															", erano ancora più orrendi da vicino, sembravano più bestie che uomini." +
+															"Orami il tramonto era vicino, si stavano preparando per accamparsi, rimanevano si e no tre ore di luce." +
+															"Ma oltre all'accampamento stavano anche preparando numerso trappole, avevvano anche le catapulte che avrebbero" +
+															"usato il giorno dopo, ma quello che mi sorprendeva veramente era il numero degli arceri, erano numerossisimi" +
+															"e ci avrebbero fatto a pezzi se non trovavamo alla svelta una buona strategia da seguire.");
+													second.setText("Ritorna dal capitano");
+													second.setOnClickListener(new View.OnClickListener() {
+														
+														@Override
+														public void onClick(View v) {
+															// TODO Auto-generated method stub
+															textview.setBackgroundResource(R.drawable.death);
+															textview=(TextView)findViewById(R.id.guerrastory);
+															textview.setText("Giro le spalle e inizio a rientrare, faccio pocchi passi quando inizio a sentire degli abbai," +
+																	"erano dei cani che stavano abbaiando, mi giro e li vedo, stavano correndo verso di me." +
+																	"Dovevo fare qualcosa, o ero morto, ma l'unica soluzione che mi veniva in mente era correre," +
+																	"correre il più che potevo, non penso a niente altro, solo a correre, faccio una decina di passi, " +
+																	"mi avvicino alle mura per rientrare, quando il mio corpo si blocca, si blocca di colpo, non rispondeva" +
+																	" più ai miei comandi, abbaso lo sguardo e vedo un fiume di sangue uscire dal mio petto, maleddeti, " +
+																	"era una freccia, una freccia mi aveva traffito il cuore.");
+															second.setText("Fine!");
+															second.setOnClickListener(new View.OnClickListener() {
+																
+																@Override
+																public void onClick(View v) {
+																	// TODO Auto-generated method stub
+																	finish();
+																	
+																}
+															});
+														}
+													});
+												}
+											});
+										}
+									});
 									
 									
 									
 								}
 							});
 							
-							second.setVisibility(View.VISIBLE);
-							second.setText("Affera la spada!");
+							//second.setVisibility(View.VISIBLE);
+							second.setText("Dirigiti alla fontana degli alchimisti!");
 							second.setOnClickListener(new View.OnClickListener() {
 								
 								@Override
@@ -139,8 +208,12 @@ public class Guerra extends Activity {
 									// TODO Auto-generated method stub
 									
 									textview = (TextView) findViewById(R.id.guerrastory);
-									textview.setText("Affero la spada e tiro un primo fendente all'assasino staccandogli la testa dal corpo, il sangue schizza" +
-											" da per tutto e quattro corone d'oro cadono dalle tasche del assasino rotolando per terra.");
+									textview.setText("Le grotte erano chiuse da più di mille anni, l'aria sarebbe stata scarsa e pesante, non era addatto a delle persone" +
+											"anziane o a giovani bambini. L'unico posto sicuro era la fontana degli alchimisti, si trovava a sudo ovest del castello," +
+											"in un campo aperto. Propongo l'idea al capitano Ardus, e ci dirigamo verso la fontana." +
+											"Dopo due ore tutte le donne, anziani e bambini si trovavano nei pressi della fontana." +
+											"Mancava solo un ora di luce ormai, intanto i nemici si tavano accampando davanti alla porta maggiore del castello." +
+											"Ci serviva un strateggia, altrimenti sarebbe stata tutta fatica inutile.");
 									
 								avanti.setText("Sbarazati del corpo!");
 								avanti.setOnClickListener(new View.OnClickListener() {
@@ -238,6 +311,7 @@ public class Guerra extends Activity {
 									@Override
 									public void onClick(View v) {
 										// TODO an other activity
+										textview.setBackgroundResource(R.drawable.death);
 										textview=(TextView)findViewById(R.id.guerrastory);
 										textview.setText("Vedevo negli occhi dei miei compagni la paura e contemporamente la speranza ." +
 												" Ma se fossi scapato avrei avuto piu' possibilita' di sopravivenza. Potevo rifugiarmi nella " +
@@ -260,12 +334,14 @@ public class Guerra extends Activity {
 						}
 					});
 				second.setVisibility(View.VISIBLE);
+				
 				second.setText("Diserta in groppa al cavallo");
 				second.setOnClickListener(new View.OnClickListener() {
 					
 					@Override
 					public void onClick(View v) {
 						// TODO an other activity
+						textview.setBackgroundResource(R.drawable.death);
 						textview=(TextView)findViewById(R.id.guerrastory);
 						textview.setText("Vedevo negli occhi dei miei compagni la paura e contemporamente la speranza ." +
 								" Ma se fossi scapato avrei avuto piu' possibilita' di sopravivenza. Potevo rifugiarmi nella " +

@@ -6,14 +6,14 @@
     <string name="action1">Schermo attivo</string>
     <string name="Titolo">Game Story</string>
     
-     <string name="Read">Read</string>
-     <string name="Help">Help</string>
-     <string name="About">About</string>
+     <string name="Read">Leggi</string>
+     <string name="Help">Aiuto</string>
+     <string name="About">Riconoscimenti</string>
      
      
-     <!-- About -->
+     <!-- Riconoscimenti -->
      <string name="Info">Volete saperene di più su di me? andate sul mio sito:</string>	
-     <string name="rate">Rate us</string>
+     <string name="rate">Vota il Gioco</string>
      <string name="sito">emulk</string>
 	<string name="indietro">Indietro</string>
 	
@@ -21,7 +21,7 @@
 	<!-- Help -->
 	<string name="HelpGame">Come giocare:</string>
 	<string name="IndietroHelp">Indietro</string>
-	<string name="helpstory">help</string>
+	<string name="helpstory">Aiuto</string>
 	
 	<!-- Read -->
 	<string name="ReadTitle">Crea la tua storia</string>

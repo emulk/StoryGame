@@ -7,17 +7,34 @@ import android.content.Context;
 import android.content.Intent;
 import android.view.Menu;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.Button;
 
 public class MainActivity extends Activity {
 	Button Help;
 	Button Read;
 	Button About;
+	//Button screenon;
+	
+	
 	
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
+        /*
+        screenon = (Button)findViewById(R.id.screenon);
+        screenon.setOnClickListener(new View.OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
+			}
+		});
+        */
+        
         
         Help = (Button)findViewById(R.id.helpButton);
         Help.setOnClickListener(new View.OnClickListener() {
