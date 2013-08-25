@@ -48,8 +48,11 @@
         android:padding="2dp"
         android:shadowDx="10"
         android:shadowRadius="10"
+        android:background="@drawable/pencil"
         android:text="@string/HelpGame"
         android:textColor="@color/SkyBlue"
         android:textSize="20sp" />
+   
+  
 
 </RelativeLayout>

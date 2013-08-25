@@ -171,24 +171,26 @@ public final class R {
     }
     public static final class drawable {
         public static final int bluebutton=0x7f020000;
-        public static final int button_focused=0x7f020001;
-        public static final int button_hold=0x7f020002;
-        public static final int button_normal=0x7f020003;
-        public static final int button_pressed=0x7f020004;
-        public static final int death=0x7f020005;
-        public static final int ic_launcher=0x7f020006;
-        public static final int icon=0x7f020007;
-        public static final int icon1=0x7f020008;
-        public static final int icon16=0x7f020009;
-        public static final int icon2=0x7f02000a;
-        public static final int icon32=0x7f02000b;
-        public static final int icon48=0x7f02000c;
-        public static final int icon72=0x7f02000d;
-        public static final int redbutton=0x7f02000e;
-        public static final int star=0x7f02000f;
-        public static final int zedbutton=0x7f020010;
-        public static final int zedbutton2=0x7f020011;
-        public static final int zedbutton3=0x7f020012;
+        public static final int book=0x7f020001;
+        public static final int button_focused=0x7f020002;
+        public static final int button_hold=0x7f020003;
+        public static final int button_normal=0x7f020004;
+        public static final int button_pressed=0x7f020005;
+        public static final int death=0x7f020006;
+        public static final int ic_launcher=0x7f020007;
+        public static final int icon=0x7f020008;
+        public static final int icon1=0x7f020009;
+        public static final int icon16=0x7f02000a;
+        public static final int icon2=0x7f02000b;
+        public static final int icon32=0x7f02000c;
+        public static final int icon48=0x7f02000d;
+        public static final int icon72=0x7f02000e;
+        public static final int pencil=0x7f02000f;
+        public static final int redbutton=0x7f020010;
+        public static final int star=0x7f020011;
+        public static final int zedbutton=0x7f020012;
+        public static final int zedbutton2=0x7f020013;
+        public static final int zedbutton3=0x7f020014;
     }
     public static final class id {
         public static final int Indietroread=0x7f09000e;
