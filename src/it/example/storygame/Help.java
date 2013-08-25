@@ -2,6 +2,7 @@ package it.example.storygame;
 
 
 import android.os.Bundle;
+import android.os.CountDownTimer;
 import android.os.Vibrator;
 import android.app.Activity;
 import android.content.Context;
@@ -9,6 +10,7 @@ import android.text.method.ScrollingMovementMethod;
 import android.view.Menu;
 import android.view.View;
 import android.widget.Button;
+import android.widget.HorizontalScrollView;
 import android.widget.TextView;
 
 public class Help extends Activity {
@@ -18,6 +20,9 @@ public class Help extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.help);
+        
+        
+        
    
 		textview=(TextView)findViewById(R.id.helpstory);
 		textview.setMovementMethod(new ScrollingMovementMethod());
@@ -43,7 +48,13 @@ public class Help extends Activity {
     }
 
 
-    @Override
+    private void scrollRight() {
+		// TODO Auto-generated method stub
+		
+	}
+
+
+	@Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.main, menu);

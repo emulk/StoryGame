@@ -50,6 +50,17 @@
          android:textColor="@color/FColor"
         android:background="@drawable/zedbutton"
          />
+    <TextView
+        android:text="@string/creato" 
+        android:singleLine="true" 
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit ="marquee_forever"
+        android:focusable="true"
+        android:textSize="16sp"
+        android:focusableInTouchMode="true" 
+        android:scrollHorizontally="true"
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content"/>
 
     <Button
         android:id="@+id/rate"
@@ -62,5 +73,6 @@
         android:background="@drawable/zedbutton"
         android:text="@string/rate"
         android:textColor="@color/FColor" />
+ 
 
 </RelativeLayout>
