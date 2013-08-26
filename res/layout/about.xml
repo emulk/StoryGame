@@ -10,69 +10,58 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".MainActivity" >
-
     <TextView
-        android:id="@+id/textView1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="43dp"
-        
-        android:padding="20dp"
-      	android:textColor="@color/SeaGreen" 
-       
-        android:text="@string/Info"
-        android:textSize="20sp" />
-
-    <Button
-        android:id="@+id/sito"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentRight="true"
-        android:layout_below="@+id/textView1"
-        android:layout_marginTop="122dp"
-       	
-        android:textColor="@color/FColor"
-        android:background="@drawable/zedbutton"
-        android:text="@string/sito" />
-
-    <Button
-        android:id="@+id/indietro"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/sito"
-        android:layout_alignRight="@+id/sito"
-        android:layout_below="@+id/sito"
-        android:text="@string/indietro" 
-        
-         android:textColor="@color/FColor"
-        android:background="@drawable/zedbutton"
-         />
-    <TextView
+        android:id="@+id/creato"
         android:text="@string/creato" 
         android:singleLine="true" 
         android:ellipsize="marquee"
         android:marqueeRepeatLimit ="marquee_forever"
         android:focusable="true"
-        android:textSize="16sp"
+        android:textColor="@color/BlueViolet"
+        android:textSize="18sp"
         android:focusableInTouchMode="true" 
         android:scrollHorizontally="true"
         android:layout_width="wrap_content" 
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:fontFamily="Chantelli_Antiqua.ttf"
+        android:shadowColor="#00ccff" 
+        android:shadowRadius="1.5"  
+        android:shadowDx="1"  
+        android:shadowDy="1"  />
+
+    <Button
+        android:id="@+id/indietro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/creato"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/sito"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/zedbutton"
+        android:text="@string/indietro"
+        android:textColor="@color/FColor" />
+
+    <Button
+        android:id="@+id/sito"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/indietro"
+        android:layout_alignLeft="@+id/creato"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/zedbutton"
+        android:text="@string/sito"
+        android:textColor="@color/FColor" />
 
     <Button
         android:id="@+id/rate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/sito"
+        android:layout_above="@+id/sito"
         android:layout_alignLeft="@+id/sito"
         android:layout_alignRight="@+id/sito"
-        android:layout_marginBottom="51dp"
         android:background="@drawable/zedbutton"
         android:text="@string/rate"
         android:textColor="@color/FColor" />
- 
 
 </RelativeLayout>

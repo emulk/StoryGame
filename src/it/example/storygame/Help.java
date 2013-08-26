@@ -2,7 +2,7 @@ package it.example.storygame;
 
 
 import android.os.Bundle;
-import android.os.CountDownTimer;
+
 import android.os.Vibrator;
 import android.app.Activity;
 import android.content.Context;
@@ -10,7 +10,7 @@ import android.text.method.ScrollingMovementMethod;
 import android.view.Menu;
 import android.view.View;
 import android.widget.Button;
-import android.widget.HorizontalScrollView;
+
 import android.widget.TextView;
 
 public class Help extends Activity {
@@ -48,10 +48,7 @@ public class Help extends Activity {
     }
 
 
-    private void scrollRight() {
-		// TODO Auto-generated method stub
-		
-	}
+ 
 
 
 	@Override

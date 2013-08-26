@@ -41,6 +41,9 @@
             android:screenOrientation="portrait"></activity>
         <activity android:name="Guerra"
             android:screenOrientation="portrait"></activity>
+        <activity android:name="Font"
+            android:screenOrientation="portrait"></activity>
+       
     </application>
 
 </manifest>
