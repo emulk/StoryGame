@@ -6,6 +6,8 @@ import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.view.Menu;
+import android.view.MenuItem;
+import android.view.WindowManager;
 import android.view.View.OnClickListener;
 import android.widget.RatingBar.OnRatingBarChangeListener;
 import android.view.View;
@@ -27,6 +29,26 @@ public class Read extends Activity {
 	private TextView txtRatingValue2;
 	private Button btnSubmit;
 	private Button btnSubmit2;
+	
+	   public boolean onOptionsItemSelected(MenuItem item) {
+	       // Handle presses on the action bar items
+	       switch (item.getItemId()) {
+	           case R.id.screenon:
+	        	   getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
+	        	   Toast.makeText(getApplicationContext(), "Schermo Attivo", Toast.LENGTH_LONG).show();
+	        	   Vibrator vb = (Vibrator)   getSystemService(Context.VIBRATOR_SERVICE);
+		            vb.vibrate(100);
+		            return true;
+	           case R.id.settings:
+	        	   Toast.makeText(getApplicationContext(), "Impostazioni", Toast.LENGTH_LONG).show();
+	        	   Vibrator sp = (Vibrator)   getSystemService(Context.VIBRATOR_SERVICE);
+		            sp.vibrate(100);
+		            return true;
+	           default:
+	              return true;
+	       }
+	   }
+	  
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

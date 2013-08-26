@@ -6,15 +6,20 @@ package it.example.storygame;
 
 
 import android.os.Bundle;
+import android.os.Vibrator;
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
 
 import android.text.method.ScrollingMovementMethod;
 import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
+import android.view.WindowManager;
 
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class partenzza extends Activity {
 	
@@ -22,6 +27,26 @@ public class partenzza extends Activity {
 
 	Button avanti;
 	Button second;
+	
+	   public boolean onOptionsItemSelected(MenuItem item) {
+	       // Handle presses on the action bar items
+	       switch (item.getItemId()) {
+	           case R.id.screenon:
+	        	   getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
+	        	   Toast.makeText(getApplicationContext(), "Schermo Attivo", Toast.LENGTH_LONG).show();
+	        	   Vibrator vb = (Vibrator)   getSystemService(Context.VIBRATOR_SERVICE);
+		            vb.vibrate(100);
+		            return true;
+	           case R.id.settings:
+	        	   Toast.makeText(getApplicationContext(), "Impostazioni", Toast.LENGTH_LONG).show();
+	        	   Vibrator sp = (Vibrator)   getSystemService(Context.VIBRATOR_SERVICE);
+		            sp.vibrate(100);
+		            return true;
+	           default:
+	              return true;
+	       }
+	   }
+	  
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {

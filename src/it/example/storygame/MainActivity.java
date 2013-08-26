@@ -16,7 +16,7 @@ public class MainActivity extends Activity {
 	Button Help;
 	Button Read;
 	Button About;
-	Button screen;
+	//Button screen;
 	//Button screenon;
 	
 	
@@ -41,7 +41,7 @@ public class MainActivity extends Activity {
 	           default:
 	              return true;
 	       }
-	       }
+	   }
 	  
 	
 	
