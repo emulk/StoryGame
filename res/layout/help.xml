@@ -58,6 +58,7 @@
         android:text="@string/HelpGame"
         android:textColor="@color/SkyBlue"
         android:textSize="20sp" />
+    
    
   
 
