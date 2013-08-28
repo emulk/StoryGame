@@ -212,7 +212,6 @@ public final class R {
         public static final int read=0x7f09000b;
         public static final int readButton=0x7f090005;
         public static final int screenon=0x7f090017;
-        public static final int settings=0x7f090018;
         public static final int sito=0x7f090002;
         public static final int story1=0x7f09000d;
         public static final int textView1=0x7f090004;

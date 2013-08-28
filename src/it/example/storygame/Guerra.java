@@ -33,11 +33,12 @@ public class Guerra extends Activity {
 	        	   Vibrator vb = (Vibrator)   getSystemService(Context.VIBRATOR_SERVICE);
 		            vb.vibrate(100);
 		            return true;
+		            /*
 	           case R.id.settings:
 	        	   Toast.makeText(getApplicationContext(), "Impostazioni", Toast.LENGTH_LONG).show();
 	        	   Vibrator sp = (Vibrator)   getSystemService(Context.VIBRATOR_SERVICE);
 		            sp.vibrate(100);
-		            return true;
+		            return true;*/
 	           default:
 	              return true;
 	       }
@@ -158,7 +159,86 @@ public class Guerra extends Activity {
 											textview.setText("Scelgo i cnique guerrieri vicino a me, iniziamo a scendere nella grotta, arrivati " +
 													"in fondo alla grotta attraversiamo il muro attraverso il bucco fatto e usciamo in campo aperto." +
 													" Eravamo alle spalle dell'esercito oscuro, iniziamo ad avvicinarci, e a scorgere centinaia di orrori " +
-													"");
+													", trappole ovvunque e come se non bastase gli arcieri stavano preparando le freccie infuocate, volevano " +
+													"bruciare tutto. C'erano centinaia di catapulte, isolate, alle spalle dei soldati." +
+													" Quelle catapulte sarebbero state la nostra rovina, dovevamo distrugerle.");
+											avanti.setVisibility(View.INVISIBLE);
+											second.setText("Distrugiamo le catapulte!");
+											second.setOnClickListener(new View.OnClickListener() {
+												
+												@Override
+												public void onClick(View v) {
+													// TODO Auto-generated method stub
+													textview=(TextView)findViewById(R.id.guerrastory);
+													textview.setText("Comunico agli altri le mie intenzioni e ci dirigiamo verso le catapulte, aggiriamo il nemico alle spalle" +
+															" , arrivia dinanzi alle catapulte. Beh da lontano sembravano grandi, ma da vicine sono gigantesche, l'unico modo" +
+															" che avevavome per metterle fuori gioco era tagliare la corda di caricamento, e sperare che non avvesero altre corde di riserva." +
+															"\n Con le nostre spade affilate era un gioco da ragazzi tagliare le corde, più andavamo avanti e più vedevamo qualche speranza" +
+															" di arrivare alla fine della prossima giornata. " +
+															"Una volta messe fuori gioco le catapulte decidiamo di avvicinarci per racogliere più informazioni possibili dal nemico, " +
+															" Arlong, uno dei miei 5 compagni, vede una guardia avvicinarsi a noi, probabilmente era uno delle guardie." +
+															" Non si era ancora accorto di noi, e a vederlo caminare era sicuramente ubriaco, inciampa su un sasso nero e cade per terra " +
+															"sbatendo la testa, sentiamo il rumore della sua testa che sbatte per tera." +
+															"Arlong fa un scatto per arrivarli alle spalle, ma appena parte il nemico sentendo i suoi passi, fa per rialzzarsi e cerca " +
+															"di estrarre la spada, ma era troppo tardi Arlong tira un fendente con la sua maesstosa spada stacandoli di netto la testa dal" +
+															" corpo. Mentre eravamo troppo presi a nascondere il cadavere qualcuno si era accorto di noi, vediamo un gruppo di 10 soldati" +
+															" che si dirigono verso di noi. Ormai ci avevano scoperto, dovevcamo scegliere, combattere o scapare?");
+													avanti.setVisibility(View.VISIBLE);
+													avanti.setText("Combati!");
+													avanti.setOnClickListener(new View.OnClickListener() {
+														
+														@Override
+														public void onClick(View v) {
+															// TODO Auto-generated method stub
+															textview.setBackgroundResource(R.drawable.death);
+															textview=(TextView)findViewById(R.id.guerrastory);
+															textview.setText("Ci prepariamo per affrontare i nemici intanto che si avvicinavano sempre di più, dietro di loro c'e n'erano" +
+																	" degli altri, ma non era un problema per ora, dovevamo affrontare i primi dieci dopo avremo pensato agli altri." +
+																	" Cerco di estrare la spada ma una freccia mi trafilgie il petto, sento un male impresionante al petto e vedo il mio" +
+																	"sangue fuoriuscire. Maledetto arciere era riuscito a trafilgermi il petto da quella distanza, non potevo crederci.");
+															avanti.setVisibility(View.INVISIBLE);
+															second.setText("Fine!");
+															second.setOnClickListener(new View.OnClickListener() {
+																
+																@Override
+																public void onClick(View v) {
+																	// TODO Auto-generated method stub
+																	finish();
+																	
+																}
+															});
+															
+														}
+													});
+													second.setText("Scapa!");
+													second.setOnClickListener(new View.OnClickListener() {
+														
+														@Override
+														public void onClick(View v) {
+															// TODO Auto-generated method stub
+															textview.setBackgroundResource(R.drawable.death);
+															textview=(TextView)findViewById(R.id.guerrastory);
+															textview.setText("Decidiamo di scapare, erano in troppi e non volevamo rischiare, " +
+																	"iniziamo a correre, ma la nostra corsa dura poco, gli arcieri iniziano a scoccare le freccia" +
+																	" e nel giro di poco tempo eravamo tutti stesi per terra e insanguinati." +
+																	" Era la fine per tutti.");
+															
+															
+															avanti.setVisibility(View.INVISIBLE);
+															second.setText("Fine!");
+															second.setOnClickListener(new View.OnClickListener() {
+																
+																@Override
+																public void onClick(View v) {
+																	// TODO Auto-generated method stub
+																	finish();
+																	
+																}
+															});
+														}
+													});
+												}
+											});
 										}
 									});
 									second.setText("Agisci da solo");
@@ -225,7 +305,7 @@ public class Guerra extends Activity {
 							});
 							
 							//second.setVisibility(View.VISIBLE);
-							second.setText("Dirigiti alla fontana degli alchimisti!");
+							second.setText("Alla fontana degli alchimisti!");
 							second.setOnClickListener(new View.OnClickListener() {
 								
 								@Override

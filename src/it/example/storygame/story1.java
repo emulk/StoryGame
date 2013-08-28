@@ -33,11 +33,11 @@ public class story1 extends Activity {
 	        	   Vibrator vb = (Vibrator)   getSystemService(Context.VIBRATOR_SERVICE);
 		            vb.vibrate(100);
 		            return true;
-	           case R.id.settings:
+	        /*   case R.id.settings:
 	        	   Toast.makeText(getApplicationContext(), "Impostazioni", Toast.LENGTH_LONG).show();
 	        	   Vibrator sp = (Vibrator)   getSystemService(Context.VIBRATOR_SERVICE);
 		            sp.vibrate(100);
-		            return true;
+		            return true;*/
 	           default:
 	              return true;
 	       }
