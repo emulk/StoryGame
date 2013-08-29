@@ -23,6 +23,8 @@ public class story1 extends Activity {
 	TextView textview;
 	Button avanti;
 	Button second;
+	int obbiettivi_s1=0;
+	
 	
 	   public boolean onOptionsItemSelected(MenuItem item) {
 	       // Handle presses on the action bar items
@@ -74,6 +76,8 @@ public class story1 extends Activity {
 		+"di mascherare l'odore e il calore del mio corpo rendendomi invisibile agli occhi di tutti.");
 				
 		
+		//obbiettivo 1: leggere una storia
+		
 		 avanti = (Button)findViewById(R.id.avanti);
 		 avanti.setOnClickListener(new View.OnClickListener() {
 			
@@ -124,6 +128,8 @@ public class story1 extends Activity {
 											" al disonore che avevo causato alla mia famigli. Mi rendo conto che tutto quell'disonore era troppo " +
 											"grande da soportare, prendo una corda e decido di impicarmi.");
 									
+									//obbiettivo 2: morire almeno una volta
+									
 									avanti.setText("Fine!");
 									avanti.setOnClickListener(new View.OnClickListener() {
 										
@@ -152,6 +158,7 @@ public class story1 extends Activity {
 									textview = (TextView) findViewById(R.id.story1);
 									textview.setText("Affero la spada e tiro un primo fendente all'assasino staccandogli la testa dal corpo, il sangue schizza" +
 											" da per tutto e quattro corone d'oro cadono dalle tasche del assasino rotolando per terra.");
+									//obbiettivo 3: trova la spada
 									
 								avanti.setText("Sbarazati del corpo!");
 								avanti.setOnClickListener(new View.OnClickListener() {
@@ -204,6 +211,8 @@ public class story1 extends Activity {
 												second.setText("Parti per l'adestramento!");
 												second.setOnClickListener(new View.OnClickListener() {
 													
+													//obbiettivo 4:la vita continua
+													
 													@Override
 													public void onClick(View v) {
 														// TODO an other activity
@@ -224,7 +233,7 @@ public class story1 extends Activity {
 												textview.setText("Afferro il sacco con forza e lo carico sopra il cavallo, salgo in groppa e parto in direzzione del bosco." +
 														" Scendo a cavallo per il ripido sentiero che si inoltra nella foresta di Freylund, mi inoltro al suo interno e " +
 														" in prossimita di un dirupo mi fermo per poi butare al suo interno il sacco");
-												
+												//obbiettivo 5: assassino
 												avanti.setVisibility(View.INVISIBLE);
 												second.setText("Parti per l'adestramento!");
 												second.setOnClickListener(new View.OnClickListener() {
@@ -264,6 +273,8 @@ public class story1 extends Activity {
 				second.setVisibility(View.VISIBLE);
 				second.setText("Preparati per partire!");
 				second.setOnClickListener(new View.OnClickListener() {
+					
+					//obbiettivo 4:la vita continua
 					
 					@Override
 					public void onClick(View v) {
