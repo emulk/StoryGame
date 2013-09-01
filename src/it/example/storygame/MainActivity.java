@@ -1,22 +1,22 @@
 package it.example.storygame;
 
-import android.R.color;
+
 import android.os.Bundle;
 import android.os.Vibrator;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
-import android.graphics.Color;
+
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
-import android.widget.LinearLayout;
+
 import android.widget.Toast;
 
 public class MainActivity extends Activity {
-	Button Help;
+	//Button Help;
 	Button Read;
 	Button About;
 	//Button screen;
@@ -36,16 +36,15 @@ public class MainActivity extends Activity {
 	        	   Vibrator vb = (Vibrator)   getSystemService(Context.VIBRATOR_SERVICE);
 		            vb.vibrate(100);
 		            return true;
-	          /* case R.id.settings:
-	        	   LinearLayout view = new LinearLayout(MainActivity.this);
-	        	   
-	        	   view.setBackgroundResource(Color.BLACK);
-	        	   this.setContentView(view);
-
-	        	   Toast.makeText(getApplicationContext(), "Impostazioni", Toast.LENGTH_LONG).show();
+	          case R.id.help:
+	
+							// TODO Auto-generated method stub
+							Intent Helpintent = new Intent (MainActivity.this, Help.class);
+							startActivity(Helpintent);           
+	        	   Toast.makeText(getApplicationContext(), "Aiuto", Toast.LENGTH_LONG).show();
 	        	   Vibrator sp = (Vibrator)   getSystemService(Context.VIBRATOR_SERVICE);
 		            sp.vibrate(100);
-		            return true;*/
+		            return true;
 	           default:
 	              return true;
 	       }
@@ -71,20 +70,7 @@ public class MainActivity extends Activity {
         */
         
         
-        Help = (Button)findViewById(R.id.helpButton);
-        Help.setOnClickListener(new View.OnClickListener() {
-			
-			@Override
-			public void onClick(View v) {
-				// TODO Auto-generated method stub
-				Intent Helpintent = new Intent (MainActivity.this, Help.class);
-				startActivity(Helpintent);
-				 Vibrator vb = (Vibrator)   getSystemService(Context.VIBRATOR_SERVICE);
-		            vb.vibrate(100);
-		            //Toast.makeText(getApplicationContext(), "Help", Toast.LENGTH_LONG).show();
-				
-			}
-		});
+        
     
         
         Read= (Button)findViewById(R.id.readButton);

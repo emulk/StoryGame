@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.os.Vibrator;
 import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.text.method.ScrollingMovementMethod;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -28,12 +29,13 @@ public class Help extends Activity {
 	        	   Toast.makeText(getApplicationContext(), "Schermo Attivo", Toast.LENGTH_LONG).show();
 	        	   Vibrator vb = (Vibrator)   getSystemService(Context.VIBRATOR_SERVICE);
 		            vb.vibrate(100);
-		            return true;
-	          /* case R.id.settings:
-	        	   Toast.makeText(getApplicationContext(), "Impostazioni", Toast.LENGTH_LONG).show();
-	        	   Vibrator sp = (Vibrator)   getSystemService(Context.VIBRATOR_SERVICE);
-		            sp.vibrate(100);
-		            return true;*/
+	           case R.id.help:
+		   			Intent Helpintent = new Intent (Help.this, Help.class);
+					startActivity(Helpintent);           
+				   Toast.makeText(getApplicationContext(), "Aiuto", Toast.LENGTH_LONG).show();
+				   Vibrator sp = (Vibrator)   getSystemService(Context.VIBRATOR_SERVICE);
+			        sp.vibrate(100);
+			            return true;
 	           default:
 	              return true;
 	       }

@@ -33,24 +33,12 @@
         />
 
     <Button
-        android:id="@+id/readButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentRight="true"
-        android:layout_below="@+id/textView1"
-        android:layout_marginTop="122dp"
-        android:background="@drawable/zedbutton"
-        android:text="@string/Read"
-        android:textColor="@color/FColor" />
-
-    <Button
         android:id="@+id/aboutButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/readButton"
-        android:layout_alignRight="@+id/readButton"
-        android:layout_below="@+id/readButton"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
         android:angle="40"
         android:background="@drawable/zedbutton"
         android:radius="50dp"
@@ -58,14 +46,14 @@
         android:textColor="@color/FColor" />
 
     <Button
-        android:id="@+id/helpButton"
+        android:id="@+id/readButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_above="@+id/aboutButton"
         android:layout_alignLeft="@+id/aboutButton"
-        android:layout_alignRight="@+id/aboutButton"
-        android:layout_below="@+id/aboutButton"
+        android:layout_alignParentRight="true"
         android:background="@drawable/zedbutton"
-        android:text="@string/Help"
+        android:text="@string/Read"
         android:textColor="@color/FColor" />
 
 </RelativeLayout>

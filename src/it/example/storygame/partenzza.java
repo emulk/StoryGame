@@ -37,11 +37,13 @@ public class partenzza extends Activity {
 	        	   Vibrator vb = (Vibrator)   getSystemService(Context.VIBRATOR_SERVICE);
 		            vb.vibrate(100);
 		            return true;
-	          /* case R.id.settings:
-	        	   Toast.makeText(getApplicationContext(), "Impostazioni", Toast.LENGTH_LONG).show();
-	        	   Vibrator sp = (Vibrator)   getSystemService(Context.VIBRATOR_SERVICE);
-		            sp.vibrate(100);
-		            return true;*/
+	           case R.id.help:
+		   			Intent Helpintent = new Intent (partenzza.this, Help.class);
+					startActivity(Helpintent);           
+				   Toast.makeText(getApplicationContext(), "Aiuto", Toast.LENGTH_LONG).show();
+				   Vibrator sp = (Vibrator)   getSystemService(Context.VIBRATOR_SERVICE);
+			        sp.vibrate(100);
+			            return true;
 	           default:
 	              return true;
 	       }
