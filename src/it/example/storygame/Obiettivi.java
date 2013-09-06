@@ -28,7 +28,7 @@ public class Obiettivi extends Activity {
 	Button Obiettivo9;
 	Button Obiettivo10;
 	Button Obiettivo11;
-	int obi=5;
+	private static int obi;
 	
 	
 	   public boolean onOptionsItemSelected(MenuItem item) {
@@ -60,7 +60,14 @@ public class Obiettivi extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.obiettivi);
         
-       
+        //Bundle extras = getIntent().getExtras();
+        //int obi = extras.getInt("obiettivi");
+        //int obi = extras.getInt("LongValue");
+        Intent mIntent = getIntent();
+        int obie = mIntent.getIntExtra("score", 0);
+        if(obie>obi){
+        	 obi = obie;
+        }
        /*
         Indietro= (Button)findViewById(R.id.indietro);
         Indietro.setOnClickListener(new View.OnClickListener() {

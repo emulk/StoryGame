@@ -53,6 +53,8 @@ public class story1 extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.story1);
 		
+		Intent obiettiviIntent = new Intent();
+		
 		second = (Button)findViewById(R.id.indietro);
 		second.setVisibility(View.INVISIBLE);
 		
@@ -79,6 +81,14 @@ public class story1 extends Activity {
 				
 		
 		//obbiettivo 1: leggere una storia
+		
+		//obiettiviIntent.setClassName("story1.this", "Obiettivi.class");
+		//obiettiviIntent.putExtra("obiettivi", (int)1);
+		//obiettiviIntent.putExtra("LongValue", (int)-80142777);
+		final Intent theIntent = new Intent(this, Obiettivi.class);
+		theIntent.putExtra("score", 1);  
+		startActivity(theIntent);
+		
 		
 		 avanti = (Button)findViewById(R.id.avanti);
 		 avanti.setOnClickListener(new View.OnClickListener() {
@@ -131,7 +141,8 @@ public class story1 extends Activity {
 											"grande da soportare, prendo una corda e decido di impicarmi.");
 									
 									//obbiettivo 2: morire almeno una volta
-									
+									theIntent.putExtra("score", 2);
+									startActivity(theIntent);
 									avanti.setText("Fine!");
 									avanti.setOnClickListener(new View.OnClickListener() {
 										
@@ -161,7 +172,8 @@ public class story1 extends Activity {
 									textview.setText("Affero la spada e tiro un primo fendente all'assasino staccandogli la testa dal corpo, il sangue schizza" +
 											" da per tutto e quattro corone d'oro cadono dalle tasche del assasino rotolando per terra.");
 									//obbiettivo 3: trova la spada
-									
+									theIntent.putExtra("score", 3); 
+									startActivity(theIntent);
 								avanti.setText("Sbarazati del corpo!");
 								avanti.setOnClickListener(new View.OnClickListener() {
 									
@@ -211,6 +223,8 @@ public class story1 extends Activity {
 												
 												avanti.setVisibility(View.INVISIBLE);
 												second.setText("Parti per l'adestramento!");
+												theIntent.putExtra("score", 4);
+												startActivity(theIntent);
 												second.setOnClickListener(new View.OnClickListener() {
 													
 													//obbiettivo 4:la vita continua
@@ -236,6 +250,8 @@ public class story1 extends Activity {
 														" Scendo a cavallo per il ripido sentiero che si inoltra nella foresta di Freylund, mi inoltro al suo interno e " +
 														" in prossimita di un dirupo mi fermo per poi butare al suo interno il sacco");
 												//obbiettivo 5: assassino
+												theIntent.putExtra("score", 5);
+												startActivity(theIntent);
 												avanti.setVisibility(View.INVISIBLE);
 												second.setText("Parti per l'adestramento!");
 												second.setOnClickListener(new View.OnClickListener() {
@@ -274,15 +290,19 @@ public class story1 extends Activity {
 					});
 				second.setVisibility(View.VISIBLE);
 				second.setText("Preparati per partire!");
+				theIntent.putExtra("score", 6);
+				startActivity(theIntent);
 				second.setOnClickListener(new View.OnClickListener() {
 					
 					//obbiettivo 4:la vita continua
-					
+					 
 					@Override
 					public void onClick(View v) {
 						// TODO an other activity
 						Intent secondintent = new Intent (story1.this, partenzza.class);
 						startActivity(secondintent);
+						
+						
 						
 					}
 				});
