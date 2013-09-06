@@ -19,6 +19,7 @@ public class MainActivity extends Activity {
 	//Button Help;
 	Button Read;
 	Button About;
+	Button Obiettivi;
 	//Button screen;
 	//Button screenon;
 	
@@ -103,7 +104,19 @@ public class MainActivity extends Activity {
 			}
 		});
         
-       
+       Obiettivi=(Button)findViewById(R.id.obiettivi);
+       Obiettivi.setOnClickListener(new View.OnClickListener() {
+		
+		@Override
+		public void onClick(View v) {
+			// TODO Auto-generated method stub
+			Intent Obieintent=new Intent(MainActivity.this, Obiettivi.class);
+			startActivity(Obieintent);
+			Vibrator vb = (Vibrator)   getSystemService(Context.VIBRATOR_SERVICE);
+            vb.vibrate(100);
+			
+		}
+	});
         
        
     }

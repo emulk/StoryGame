@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+ 
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+ 
+
+        <Button
+            android:id="@+id/obiettivo1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/zedbutton"
+            android:clickable="FALSE"
+            android:src="@drawable/cup"
+         	android:drawableLeft="@drawable/cup"
+            android:text="Button 1" />
+
+ 
+
+        <Button
+            android:id="@+id/obiettivo2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/zedbutton"
+             android:clickable="FALSE"
+             android:src="@drawable/cup"
+         	android:drawableLeft="@drawable/cup"
+            android:text="Button 2" />
+ 
+
+        <Button
+            android:id="@+id/obiettivo3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/zedbutton"
+             android:clickable="FALSE"
+             android:src="@drawable/cup"
+         	android:drawableLeft="@drawable/cup"
+           android:text="Button 3" />
+
+ 
+
+        <Button
+            android:id="@+id/obiettivo4"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/zedbutton"
+             android:clickable="FALSE"
+             android:src="@drawable/cup"
+         	android:drawableLeft="@drawable/cup"
+            android:text="Button 4" />
+
+
+
+        <Button
+            android:id="@+id/obiettivo5"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/zedbutton"
+             android:clickable="FALSE"
+             android:src="@drawable/cup"
+         	android:drawableLeft="@drawable/cup"
+            android:text="Button 5" />
+
+
+
+ 
+        <Button
+            android:id="@+id/obiettivo6"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/zedbutton"
+             android:clickable="FALSE"
+             android:src="@drawable/cup"
+         	android:drawableLeft="@drawable/cup"
+            android:text="Button 6" />
+
+ 
+ 
+
+        <Button
+            android:id="@+id/obiettivo7"
+            
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/zedbutton"
+             android:clickable="FALSE"
+             android:src="@drawable/cup"
+         	android:drawableLeft="@drawable/cup"
+            android:text="Button 7" />
+ 
+
+        <Button
+            android:id="@+id/obiettivo8"
+           android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/zedbutton"
+             android:clickable="FALSE"
+             android:src="@drawable/cup"
+         	android:drawableLeft="@drawable/cup"
+            android:text="Button 8" />
+
+ 
+
+     
+ 
+
+        <Button
+            android:id="@+id/obiettivo9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/zedbutton"
+             android:clickable="FALSE"
+             android:src="@drawable/cup"
+         	android:drawableLeft="@drawable/cup"
+            android:text="Button 9" />
+
+ 
+
+        <Button
+            android:id="@+id/obiettivo10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/zedbutton"
+             android:clickable="FALSE"
+             android:src="@drawable/cup"
+         	android:drawableLeft="@drawable/cup"
+            android:text="Button 10" />
+
+
+        <Button
+            android:id="@+id/obiettivo11"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/zedbutton"
+             android:clickable="FALSE"
+             android:src="@drawable/cup"
+         	android:drawableLeft="@drawable/cup"
+            android:text="Button 11" />
+         <Button
+             android:id="@+id/indietro"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/zedbutton"
+             android:clickable="FALSE"
+             
+            android:text="@string/indietro" />
+
+    </LinearLayout>
+
+</ScrollView>
