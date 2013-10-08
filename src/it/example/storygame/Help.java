@@ -54,11 +54,11 @@ public class Help extends Activity {
    
 		textview=(TextView)findViewById(R.id.helpstory);
 		textview.setMovementMethod(new ScrollingMovementMethod());
-		textview.setText("Un librogame o anche o libro-gioco Ë un'opera narrativa che invece di essere letta linearmente dall'inizio alla fine" +
+		textview.setText("Un librogame o anche o libro-gioco √® un'opera narrativa che invece di essere letta linearmente dall'inizio alla fine" +
 				" presenta alcune possibili alternative mediante l'uso di paragrafi o pagine numerate." +
-				"\n Lettori diversi (o la stessa persona in occasione di una rilettura) potranno compiere scelte diverse e ciÚ condizioner‡ lo svolgimento e la fine della trama." +
-				"\nNormalmente un librogame si presenta come un libro diviso in sezioni numerate che terminano con una serie di opzioni che presentano le scelte che il lettore puÚ prendere in quel punto; " +
-				"ad ogni opzione corrisponde il numero del paragrafo con cui si dovr‡ proseguire la lettura. Il lettore raggiunge infine un paragrafo conclusivo che porta a termine la storia. Nella" +
+				" Lettori diversi (o la stessa persona in occasione di una rilettura) potranno compiere scelte diverse e ci√≤ condizioner√† lo svolgimento e la fine della trama." +
+				" Normalmente un librogame si presenta come un libro diviso in sezioni numerate che terminano con una serie di opzioni che presentano le scelte che il lettore pu√≤ prendere in quel punto; " +
+				"ad ogni opzione corrisponde il numero del paragrafo con cui si dovr√† proseguire la lettura. Il lettore raggiunge infine un paragrafo conclusivo che porta a termine la storia. Nella" +
 				" maggior parte dei librogame solo uno dei paragrafi si conclude con il \"successo\" del giocatore, mentre negli altri si conclude con un \"fallimento\"");
         
         Indietro = (Button)findViewById(R.id.read);
